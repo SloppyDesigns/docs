@@ -18,7 +18,7 @@ title: SloppyDocs
 email: adam@adamrehn.com
 description: Sloppy Designs Documentation
 baseurl: ""
-url: "https://docs.sloppydesigns.com/"
+url: "https://docs.sloppydesigns.com"
 timezone: Australia/Brisbane
 
 # Build settings
