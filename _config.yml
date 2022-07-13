@@ -6,11 +6,11 @@ color_scheme: sloppydesigns
 # Aux links for the upper right navigation
 aux_links:
   "Tebex":
-    - "//www.sloppydesigns.com/"
+    - "//sloppydesigns.com"
   "Discord":
     - "//discord.gg/Q88zQUUKxs"
   "YouTube":
-    - "//www.youtube.com/channel/UC3t4WYhIvjhGXPNyv0Qh43g"
+    - "//youtube.com/channel/UC3t4WYhIvjhGXPNyv0Qh43g"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
