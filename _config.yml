@@ -1,5 +1,6 @@
 remote_theme: just-the-docs/just-the-docs
-title: Sloppy Designs
+title: Docs
+description: Something
 baseurl: ""
 color_scheme: sloppydesigns
 
