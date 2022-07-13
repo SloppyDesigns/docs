@@ -23,7 +23,10 @@
 			</span>
 			
 			<a href="{{ "/" | relative_url }}"> Test <img class="logo" src="{% if site.theme-settings.logo %}{{ site.theme-settings.logo | uri_escape }}{% else %}{{ "/" | relative_url }}assets/images/logo.svg{% endif %}" alt="{{ site.title | escape }}"></a>
-			
+			<div class="sd-header">
+				<a href="{{ "/" | relative_url }}"> Test</a>
+				<div class="sd-header-bar"></div>
+			</div>
 			<span class="to-top">
 				<a href="#top" role="button"><span class="fas fa-fw {% if site.theme-settings.fontawesome.icons.top %}{{ site.theme-settings.fontawesome.icons.top | escape }}{% else %}fa-arrow-up{% endif %}" title="Return to top"></span></a>
 			</span>
