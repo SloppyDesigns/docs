@@ -18,7 +18,7 @@
 				<article>
 					
 					{% if page.chapter %}<p class="chapter" id="top">{% if page.icon %}{% assign components = page.url | split: "/" %}<span class="icon icon-{{ components[-2] | escape }} {{ page.icon | escape }}"></span>{% else %}<span class="icon fas {% if site.theme-settings.fontawesome.icons.page %}{{ site.theme-settings.fontawesome.icons.page | escape }}{% else %}fa-angle-double-right{% endif %}"></span>{% endif %} {{ page.chapter | escape }}</p>{% endif %}
-					<h1>{{ page.title | escape }}</h1>
+					<h1>{{ page.title | escape }} Test</h1>
 					
 					{% if toc.size > 0 %}
 					<div class="contents-inline">
