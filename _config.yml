@@ -1,6 +1,7 @@
-remote_theme: just-the-docs/just-the-docs
-title: Docs
-description: Something
+#remote_theme: just-the-docs/just-the-docs
+remote_theme: adamrehn/jekyll-theme-gitbook@v0.0.1
+title: SloppyDocs
+description: Sloppy Designs Documentation
 baseurl: ""
 color_scheme: sloppydesigns
 
