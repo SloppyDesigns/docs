@@ -41,6 +41,12 @@ layout: table_wrappers
   </svg>
 
   <div class="side-bar">
+    <div class="site-header">
+      <a href="{{ '/' | absolute_url }}" class="site-title lh-tight">{% include title.html %}</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
     <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
       {% if site.just_the_docs.collections %}
         {% assign collections_size = site.just_the_docs.collections | size %}
@@ -62,13 +68,17 @@ layout: table_wrappers
   </div>
   <div class="main" id="top">
     <div id="main-header" class="main-header">
-      <div class="site-header">
-        <a href="{{ '/' | absolute_url }}" class="site-title lh-tight">{% include title.html %}</a>
-        <a href="#" id="menu-button" class="site-button">
-          <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
-        </a>
-      </div>
-        {% if site.aux_links %}
+      {% if site.search_enabled != false %}
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      {% endif %}
+      {% include header_custom.html %}
+      {% if site.aux_links %}
         <nav aria-label="Auxiliary" class="aux-nav">
           <ul class="aux-nav-list">
             {% for link in site.aux_links %}
@@ -85,16 +95,6 @@ layout: table_wrappers
           </ul>
         </nav>
       {% endif %}
-      {% if site.search_enabled != false %}
-        <div class="search">
-          <div class="search-input-wrap">
-            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" autocomplete="off">
-            <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
-          </div>
-          <div id="search-results" class="search-results"></div>
-        </div>
-      {% endif %}
-      {% include header_custom.html %}
     </div>
     <div id="main-content-wrap" class="main-content-wrap">
       {% unless page.url == "/" %}
