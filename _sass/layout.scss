@@ -16,6 +16,7 @@
     flex-direction: column;
     border-right: $border $border-color;
     align-items: flex-end;
+    margin-top: $header-height;
   }
 
   @include mq(lg) {
