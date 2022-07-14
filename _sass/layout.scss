@@ -75,7 +75,7 @@
 .site-header,
 .site-footer {
   width: 100%;
-
+  background-color: $sidebar-color;
   @include mq(lg) {
     width: $nav-width;
   }
