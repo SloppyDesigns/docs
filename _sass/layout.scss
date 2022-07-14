@@ -75,7 +75,7 @@
 .site-header,
 .site-footer {
   width: 100%;
-  background-color: $sidebar-color;
+
   @include mq(lg) {
     width: $nav-width;
   }
@@ -118,6 +118,7 @@
   padding-top: $sp-3;
   padding-bottom: $sp-3;
   color: $body-heading-color;
+  background-color: $sidebar-color;
   @include fs-6;
 
   @include mq(md) {
