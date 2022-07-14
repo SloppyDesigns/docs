@@ -81,6 +81,11 @@
   cursor: pointer;
 }
 
+.main-header-content {
+  justify-content: flex-start;
+  max-width: 252px;
+}
+
 .site-nav,
 .site-header,
 .site-footer {
