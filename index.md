@@ -1,4 +1,5 @@
 ---
-layout: default
-title: Demo Site Front Page
+layout: home
 ---
+
+Test
