@@ -16,7 +16,6 @@
     flex-direction: column;
     border-right: $border $border-color;
     align-items: flex-end;
-    margin-top: $header-height;
   }
 
   @include mq(lg) {
@@ -28,7 +27,8 @@
 .main {
   @include mq(md) {
     position: relative;
-    width: 100%;
+    max-width: $content-width;
+    margin-left: $nav-width-md;
   }
 
   @include mq(lg) {
@@ -75,6 +75,10 @@
 .site-header,
 .site-footer {
   width: 100%;
+
+  @include mq(lg) {
+    width: $nav-width;
+  }
 }
 
 .site-nav {
