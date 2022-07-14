@@ -53,7 +53,7 @@
   z-index: 0;
   display: none;
   height: 80px;
-  background-color: $sidebar-color;
+  background-color: red;
 
   @include mq(md) {
     display: flex;
