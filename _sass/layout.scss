@@ -74,11 +74,13 @@
 }
 
 .main-header-logo {
+  -webkit-box-pack: end;
   justify-content: flex-end;
   padding-left: 24px;
   padding-right: 24px;
   width: max(300px, ((100vw - 910px) / 2) - 0px);
   cursor: pointer;
+  background-color: red;
 }
 
 .main-header-content {
