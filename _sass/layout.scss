@@ -77,16 +77,14 @@
   }
 }
 
-.main-header-logo {
-  -webkit-box-pack: end;
-  justify-content: flex-end;
+.main-header-title {
   padding-left: 24px;
   padding-right: 24px;
   width: max(300px, ((100vw - 910px) / 2) - 0px);
   cursor: pointer;
 }
 
-.main-header-content {
+.main-header-logo {
   justify-content: end; 
   max-width: 252px;
 }
