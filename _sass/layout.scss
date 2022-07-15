@@ -90,6 +90,7 @@
 .main-header-logo {
   display: flex;
   justify-content: flex-start;
+  flex-direction: row;
   flex-grow: 1;
   max-width: 252px;
   background-color: red;
