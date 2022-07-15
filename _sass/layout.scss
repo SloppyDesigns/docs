@@ -89,6 +89,7 @@
 
 .main-header-logo {
   display: flex;
+  -webkit-box-pack: start;
   justify-content: flex-start;
   flex-direction: row;
   flex-grow: 1;
