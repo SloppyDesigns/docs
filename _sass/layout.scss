@@ -77,7 +77,10 @@
   }
 }
 
-.main-header-title {
+.main-header-brand {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  flex-direction: row;
   padding-left: 24px;
   padding-right: 24px;
   width: max(300px, ((100vw - 910px) / 2) - 0px);
@@ -85,7 +88,8 @@
 }
 
 .main-header-logo {
-  justify-content: end; 
+  justify-content: flex-start;
+  flex-grow: 1;
   max-width: 252px;
 }
 
