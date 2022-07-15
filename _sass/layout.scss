@@ -97,6 +97,13 @@
   background-color: red;
 }
 
+.main-header-spacer {
+  margin-left: -1px;
+  height: 40px;
+  background-color: rgba(211,220,228,1.00);
+  display: flex;
+}
+
 .site-nav,
 .site-header,
 .site-footer {
