@@ -11,6 +11,10 @@
   transition: padding linear #{$transition-duration / 2};
 
   @include mq(md) {
+    padding-right: 8px;
+    padding-left: 24px;
+    -webkit-box-align: start;
+    align-items: flex-start;
     position: relative !important;
     width: auto !important;
     height: 100% !important;
