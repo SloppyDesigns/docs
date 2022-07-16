@@ -121,6 +121,11 @@
   padding-right: 16px;
 }
 
+.main-header-search {
+  width: max(220px, ((((100vw - max(300px, ((100vw - 910px) / 2) - 0px)) - 750px) - 80px) - 80px) - 0px);
+  background-color: red;
+}
+
 .site-nav,
 .site-header,
 .site-footer {
