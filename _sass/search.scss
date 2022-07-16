@@ -79,10 +79,10 @@
   position: absolute;
   display: flex;
   height: 100%;
-  padding-left: $gutter-spacing-sm;
+  //padding-left: $gutter-spacing-sm;
 
   @include mq(md) {
-    padding-left: $gutter-spacing;
+    //padding-left: $gutter-spacing;
     transition: padding-left linear #{$transition-duration / 2};
   }
 
