@@ -41,16 +41,6 @@ layout: table_wrappers
   </svg>
 
   <div class="side-bar">
-    <div class="site-header">
-      
-      <div class="header_logo">
-        <a href="{{ '/' | absolute_url }}" > <img src="{{ '/assets/images/rumi_icon.svg' | relative_url }}" class="header_logo_img"/> <span>{% include title.html %}</span></a> 
-      </div>
-      <a href="#" id="menu-button" class="site-button">
-        
-        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
-      </a>
-    </div>
     <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
       {% if site.just_the_docs.collections %}
         {% assign collections_size = site.just_the_docs.collections | size %}
@@ -77,6 +67,14 @@ layout: table_wrappers
   </div>
   <div class="main" id="top">
     <!--Main-->
+    <div class="site-header">
+      <div class="header_logo">
+        <a href="{{ '/' | absolute_url }}" > <img src="{{ '/assets/images/rumi_icon.svg' | relative_url }}" class="header_logo_img"/> <span>{% include title.html %}</span></a> 
+      </div>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
 
     <div id="main-header" class="main-header">
       {% if site.aux_links %}
