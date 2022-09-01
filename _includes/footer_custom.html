@@ -1,0 +1,31 @@
+<div class="prev-next-block">
+  <!--Previous link-->
+  {% if page.prev %}
+  <a href="{{ page.prev }}" class="button prev-btn" rel="prev">
+    <div class="css-1dbjc4n r-88pszg">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest__266-1761__" class="r-1rasi3h r-1472mwg r-lrsllp" style="vertical-align: middle;"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
+    </div> 
+    <div>
+      <span><!-- -Custom domains ---> Previous</span>
+      <h5>{{page.prev_title}}</h5>
+    </div>
+  </a>
+  {% endif %}
+  
+  <!--Next link-->
+  {% if page.next %}
+  <a href="{{ page.next }}" class="button next-btn" rel="next">
+    <div>
+      <span>Next <!-- - Custom domains--></span>
+      <h5>{{page.next_title}}</h5>
+    </div>
+    <div class="css-1dbjc4n r-1ow6zhx">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest__266-1761__" class="r-1rasi3h r-1472mwg r-lrsllp" style="vertical-align: middle;"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+    </div>
+  </a>
+  {% endif %}
+  </div>
+  
+{%- if site.footer_content -%}
+  <p class="text-small text-grey-dk-100 mb-0">{{ site.footer_content }}</p>
+{%- endif -%}
