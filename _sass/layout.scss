@@ -34,7 +34,7 @@
   }
 
   @include mq(lg) {
-    margin-left: max(300px, ((100vw - 910px) / 2) - 0px);
+   // margin-left: max(300px, ((100vw - 910px) / 2) - 0px);
   }
 }
 
