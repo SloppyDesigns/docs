@@ -40,6 +40,9 @@
     border-bottom-color: rgba(211,220,228,1.00);
     height: $header-height;
   }
+
+  background-color: $body-background-color;
+  border-bottom: $border $border-color;
 }
 
 .main-content-wrap {
@@ -66,10 +69,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
-    background-color: $body-background-color;
-    border-bottom: $border $border-color;
-    
   }
 
   &.nav-open {
