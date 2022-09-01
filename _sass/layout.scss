@@ -34,9 +34,7 @@
   }
 
   @include mq(lg) {
-    margin-left: calc(
-      (100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}
-    );
+    margin-left: max(300px, ((100vw - 910px) / 2) - 0px);
   }
 }
 
