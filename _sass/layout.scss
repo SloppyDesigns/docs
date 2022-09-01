@@ -28,8 +28,6 @@
 .main {
   @include mq(md) {
     position: relative;
-    max-width: $content-width;
-    margin-left: $nav-width-md;
     padding-top: 60px;
   }
 
@@ -42,7 +40,8 @@
   @include container;
   padding-top: $gutter-spacing-sm;
   padding-bottom: $gutter-spacing-sm;
-
+  max-width: $content-width;
+  margin-left: $nav-width-md;
   @include mq(md) {
     padding-top: $gutter-spacing;
     padding-bottom: $gutter-spacing;
