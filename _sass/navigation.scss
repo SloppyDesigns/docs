@@ -21,7 +21,9 @@
     .nav-list-link {
       display: block;
       color: #5c6975;
-      border: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
       min-height: $nav-list-item-height-sm;
       padding-top: $sp-3;
       padding-bottom: $sp-3;
