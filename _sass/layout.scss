@@ -87,8 +87,6 @@
 
 .site-nav {
   display: none;
-  border-right-width: 1px;
-  border-right-color: rgb(0 135 255);
   
   &.nav-open {
     display: block;
@@ -101,6 +99,8 @@
     overflow-y: auto;
     flex: 1 1 auto;
   }
+  border-right-width: 1px;
+  border-right-color: rgb(0 135 255);
 }
 
 .search {
