@@ -450,8 +450,9 @@ nav.main-navigation ul.main-menu li a:hover {
   width: 70%;
 }
 nav.top-navigation {
-  width: 76%;
-  max-width: 100%;
+  padding-right: 64px;
+  padding-left: 64px;
+  flex-grow: 1;
 }
 
 ul.top-menu {
