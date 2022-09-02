@@ -25,7 +25,7 @@
       border-top: 1px solid transparent;
       border-left: 1px solid transparent;
       min-height: $nav-list-item-height-sm;
-      padding-top: $sp-3;
+      padding-top: 0.8rem;
       padding-bottom: $sp-3;
       line-height: #{$nav-list-item-height-sm - 2 * $sp-2};
       @if $nav-list-expander-right {
