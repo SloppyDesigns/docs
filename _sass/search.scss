@@ -11,7 +11,7 @@
   transition: padding linear #{$transition-duration / 2};
 
   @include mq(md) {
-    width: max(220px, ((((100vw - max(300px, ((100vw - 910px) / 2) - 0px)) - 750px) - 80px) - 80px) - 0px);
+    width: 200px !important;
     max-width: 100%;
     flex-grow: inherit;
     position: relative !important;
@@ -38,6 +38,7 @@
     box-shadow: none;
     transition: width ease $transition-duration;
   }
+  
 }
 .search-input-wrap:before{
   @include mq(md) {
