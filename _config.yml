@@ -2,7 +2,7 @@ remote_theme: just-the-docs/just-the-docs
 
 # Site settings
 color_scheme: sloppydesigns
-title: Sloppy Designs
+title: SloppyDesigns
 email: sloppydesigns@outlook.com
 description: Sloppy Designs Documentation
 baseurl: ""
