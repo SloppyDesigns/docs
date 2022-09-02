@@ -10,7 +10,7 @@ url: "https://docs.sloppydesigns.com"
 
 # Aux links for the upper right navigation
 aux_links:
-  "Tebex":
+  "Tebex Store":
     - "//www.sloppydesigns.com"
   "Discord":
     - "//discord.gg/Q88zQUUKxs"
@@ -23,4 +23,4 @@ aux_links_new_tab: true
 search_enabled: true
 
 search:
-  button: true
+  button: false
