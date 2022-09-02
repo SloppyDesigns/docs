@@ -40,20 +40,43 @@ layout: table_wrappers
     </symbol>
   </svg>
 
+  <div class="side-bar">
+    <div class="site-header">
+      
+      <div class="header_logo">
+        <a href="{{ '/' | absolute_url }}" > <img src="{{ '/assets/images/rumi_icon.svg' | relative_url }}" class="header_logo_img"/> <span>{% include title.html %}</span></a> 
+      </div>
+      <a href="#" id="menu-button" class="site-button">
+        
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      {% if site.just_the_docs.collections %}
+        {% assign collections_size = site.just_the_docs.collections | size %}
+        {% for collection_entry in site.just_the_docs.collections %}
+          {% assign collection_key = collection_entry[0] %}
+          {% assign collection_value = collection_entry[1] %}
+          {% assign collection = site[collection_key] %}
+          {% if collection_value.nav_exclude != true %}
+            {% if collections_size > 1 %}
+              <div class="nav-category">{{ collection_value.name }}</div>
+            {% endif %}
+            {% include nav.html pages=collection %}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        {% include nav.html pages=site.html_pages %}
+      {% endif %}
+    </nav>
+    <footer class="site-footer">
+     <a href=""><img src="{{ '/assets/images/rumi_icon.svg' | relative_url }}"/> <span>Powered By <strong>Rumi doc</strong></span></a>
+    </footer>
+  </div>
   <div class="main" id="top">
     <!--Main-->
-    
 
     <div id="main-header" class="main-header">
-      <div class="site-header">
-        <div class="header_logo">
-          <a href="{{ '/' | absolute_url }}" > <img src="{{ '/assets/images/rumi_icon.svg' | relative_url }}" class="header_logo_img"/> <span>{% include title.html %}</span></a> 
-        </div>
-        <a href="#" id="menu-button" class="site-button">
-          <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
-        </a>
-      </div>
-
       {% if site.aux_links %}
       
         <nav class="top-navigation">
@@ -203,32 +226,5 @@ layout: table_wrappers
       <div class="search-overlay"></div>
     {% endif %}
   </div>
-
-  <div class="side-bar">
-    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
-      {% if site.just_the_docs.collections %}
-        {% assign collections_size = site.just_the_docs.collections | size %}
-        {% for collection_entry in site.just_the_docs.collections %}
-          {% assign collection_key = collection_entry[0] %}
-          {% assign collection_value = collection_entry[1] %}
-          {% assign collection = site[collection_key] %}
-          {% if collection_value.nav_exclude != true %}
-            {% if collections_size > 1 %}
-              <div class="nav-category">{{ collection_value.name }}</div>
-            {% endif %}
-            {% include nav.html pages=collection %}
-          {% endif %}
-        {% endfor %}
-      {% else %}
-        {% include nav.html pages=site.html_pages %}
-      {% endif %}
-    </nav>
-    <!--
-    <footer class="site-footer">
-     <a href=""><img src="{{ '/assets/images/rumi_icon.svg' | relative_url }}"/> <span>Powered By <strong>Rumi doc</strong></span></a>
-    </footer>
-    -->
-  </div>
-  
 </body>
 </html>
