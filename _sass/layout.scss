@@ -40,12 +40,14 @@
 
 .main-content-wrap {
   @include container;
-  padding-top: $gutter-spacing-sm;
-  padding-bottom: $gutter-spacing-sm;
+  padding-left: 64px;
+  padding-top: 24px;
+  margin-bottom: 16px;
 
   @include mq(md) {
-    padding-top: $gutter-spacing;
-    padding-bottom: $gutter-spacing;
+    padding-left: 64px;
+    padding-top: 24px;
+    margin-bottom: 16px;
   }
 }
 
