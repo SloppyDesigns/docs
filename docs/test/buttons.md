@@ -3,10 +3,6 @@ layout: default
 title: Buttons
 parent: Test
 nav_order: 2
-prev: /docs/ui-components/typography/
-next: /docs/ui-components/labels/
-prev_title: Typography
-next_title: Labels
 ---
 
 # Buttons
