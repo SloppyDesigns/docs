@@ -4,8 +4,6 @@ title: Home
 nav_order: 1
 description: "Sloppy Doc is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
 permalink: /
-next: /docs/configuration/
-next_title: Configuration
 ---
 
 # Focus on writing good documentation.
