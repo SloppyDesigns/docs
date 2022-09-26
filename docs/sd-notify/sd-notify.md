@@ -1,9 +1,9 @@
 ---
 layout: default
-title: SD Notify
+title: sd-notify
 nav_order: 1
 has_children: true
 permalink: /docs/sd-notify
 ---
 
-# SD Notify
+# sd-notify
