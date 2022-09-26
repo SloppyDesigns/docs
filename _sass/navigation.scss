@@ -90,6 +90,10 @@
       }
     }
 
+    .nav-list-expander:hover {
+      color: $link-color;
+    }
+
     > .nav-list {
       display: none;
       padding-left: $sp-3;
