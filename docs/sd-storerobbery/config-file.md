@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Config File
-parent: SD-Notify
+parent: SD-StoreRobbery
 nav_order: 1
 ---
 
