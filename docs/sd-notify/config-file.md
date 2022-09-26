@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Config File
-parent: sd-notify
+parent: SD Notify
 nav_order: 1
 ---
 

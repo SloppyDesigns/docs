@@ -7,4 +7,3 @@ permalink: /
 ---
 
 # About Us
-{: .fs-9 }
