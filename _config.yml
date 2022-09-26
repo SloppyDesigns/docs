@@ -36,7 +36,7 @@ collections:
 just_the_docs:
   collections:
     paid:
-      name: Paid Scripts
+      name: Scripts
     free:
       name: Free Scripts
     
