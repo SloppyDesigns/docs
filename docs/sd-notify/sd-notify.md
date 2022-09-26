@@ -8,4 +8,4 @@ next: /docs/sd-notify/config-file
 permalink: /docs/sd-notify
 ---
 
-# sd-notify
+# SD-Notify
