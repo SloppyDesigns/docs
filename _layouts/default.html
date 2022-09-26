@@ -67,6 +67,9 @@ layout: table_wrappers
       {% else %}
         {% include nav.html pages=site.html_pages %}
       {% endif %}
+      {% if site.html_pages %}
+        {% include nav.html pages=site.html_pages %}
+      {% endif %}
     </nav>
   </div>
   <div class="main" id="top">
