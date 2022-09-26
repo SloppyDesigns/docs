@@ -13,14 +13,14 @@ aux_links:
   "Tebex Store":
     - "//www.sloppydesigns.com"
   "Discord":
-    - "//discord.gg/Q88zQUUKxs"
+    - "//discord.gg/sloppydesigns"
   "YouTube":
     - "//youtube.com/channel/UC3t4WYhIvjhGXPNyv0Qh43g"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
 
-search_enabled: true
+search_enabled: false
 
 search:
   button: false
