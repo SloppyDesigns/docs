@@ -2,7 +2,7 @@
 layout: default
 title: Config File
 parent: SD-Notify
-nav_order: 1
+nav_order: 2
 ---
 
 # Config File
