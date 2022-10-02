@@ -5,10 +5,10 @@ nav_order: 1
 has_children: true
 has_toc: false
 prev: /index
-next: /docs/sd-menu/config-file
+next: /others/sd-menu/config-file
 prev_title: About Us
 next_title: Config File
-permalink: /docs/sd-menu
+permalink: /others/sd-menu
 ---
 
 # SD-Menu

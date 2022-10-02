@@ -26,17 +26,17 @@ search:
   button: false
 
 collections:
-  paid:
+  scripts:
     permalink: "/:collection/:path/"
     output: true
-  free:
+  others:
     permalink: "/:collection/:path/"
     output: true
 
 just_the_docs:
   collections:
-    paid:
-      name: Scripts
-    free:
-      name: Free Scripts
+    scripts:
+      name: SCRIPTS
+    others:
+      name: OTHERS
     
