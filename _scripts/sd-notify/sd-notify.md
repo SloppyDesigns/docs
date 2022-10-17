@@ -12,3 +12,14 @@ permalink: /scripts/sd-notify
 ---
 
 # SD-Notify
+
+**Client Side**
+```lua
+exports['sd-notify']:Notify('Title', 'Message', length, type, position)
+```
+
+**Server Side**
+```lua
+TriggerClientEvent('sd-notify:Notify', source, 'Title', 'Message', length, type, position)
+```
+
