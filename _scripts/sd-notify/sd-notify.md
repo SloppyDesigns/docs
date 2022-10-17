@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SD-Notify
-nav_order: 0
+nav_order: 1
 has_children: true
 has_toc: false
 prev: /index
