@@ -5,7 +5,7 @@ nav_order: 4
 has_children: true
 has_toc: false
 prev: /index
-next: /scripts/sd-notify/installation/
+next: /scripts/sd-notify/installation/index
 prev_title: About Us
 next_title: Installation
 permalink: /scripts/sd-notify
