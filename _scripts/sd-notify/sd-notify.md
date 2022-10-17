@@ -13,6 +13,10 @@ permalink: /scripts/sd-notify
 
 # SD-Notify
 
+___
+[Preview](https://www.youtube.com/watch?v=z8XstRn0gCg)
+___
+
 **Client Side**
 ```lua
 exports['sd-notify']:Notify('Title', 'Message', length, type, position)
