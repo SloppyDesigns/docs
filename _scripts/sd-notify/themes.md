@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Themes
+title: Config File
 parent: SD-Notify
-nav_order: 4
+nav_order: 3
+---
 
 # Themes
 

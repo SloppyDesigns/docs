@@ -1,13 +1,13 @@
 ---
 layout: default
 title: SD-Notify
-nav_order: 1
+nav_order: 0
 has_children: true
 has_toc: false
 prev: /index
-next: '/scripts/sd-notify/installation/'
+next: /installation
 prev_title: About Us
-next_title: Config File
+next_title: Installation
 permalink: /scripts/sd-notify
 ---
 
