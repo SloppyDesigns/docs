@@ -2,8 +2,7 @@
 layout: default
 title: Themes
 parent: SD-Notify
-nav_order: 3
----
+nav_order: 4
 
 # Themes
 
