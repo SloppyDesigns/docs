@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SD-StoreRobbery
-nav_order: 1
+nav_order: 5
 has_children: true
 has_toc: false
 prev: /index
