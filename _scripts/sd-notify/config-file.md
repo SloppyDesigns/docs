@@ -10,6 +10,9 @@ nav_order: 3
 ```lua
 Config = {}
 
+-- Enable Notifcation Sound
+Config.EnableSound = true
+
 -- top-left | top-right | top-center | bottom-left | bottom-right | bottom-center | right-center | left-center
 Config.DefaultPosition = 'right-center'
 
