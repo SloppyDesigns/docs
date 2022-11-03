@@ -56,17 +56,17 @@ end
 ```lua
 function ESX.ShowNotification(message, type, length)
     if Config.NativeNotify then 
-		BeginTextCommandThefeedPost('STRING')
-    	AddTextComponentSubstringPlayerName(message)
-    	EndTextCommandThefeedPostTicker(0,1)
+        BeginTextCommandThefeedPost('STRING')
+        AddTextComponentSubstringPlayerName(message)
+        EndTextCommandThefeedPostTicker(0,1)
     else
-		if type(message) == "table" then
-			local text = message.text or ''
-			local title = message.title or ''
-			exports['sd-notify']:Notify(title, text, length, type)
-		else
-			exports['sd-notify']:Notify("", message, length, type)
-		end
+        if type(message) == "table" then
+            local text = message.text or ''
+            local title = message.title or ''
+            exports['sd-notify']:Notify(title, text, length, type)
+        else
+            exports['sd-notify']:Notify("", message, length, type)
+        end
     end
 end
 ```
