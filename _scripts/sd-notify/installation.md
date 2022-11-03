@@ -35,18 +35,38 @@ end
 2. Search for **ESX.ShowNotification**
 3. Replace with the code below.
 
+### ESX Legacy 1.8.5
 ```lua
 function ESX.ShowNotification(message, type, length)
     if GetResourceState("sd-notify") ~= "missing" then
         if type(message) == "table" then
-            local text = message.text or 'Placeholder'
-            local title = message.title or 'Placeholder'
+            local text = message.text or ''
+            local title = message.title or ''
             exports['sd-notify']:Notify(title, text, length, type)
         else
             exports['sd-notify']:Notify("", message, length, type)
         end
     else
         print("[^1ERROR^7] ^5SD Notify^7 is Missing!")
+    end
+end
+```
+
+### ESX Legacy 1.7.5
+```lua
+function ESX.ShowNotification(message, type, length)
+    if Config.NativeNotify then 
+		BeginTextCommandThefeedPost('STRING')
+    	AddTextComponentSubstringPlayerName(message)
+    	EndTextCommandThefeedPostTicker(0,1)
+    else
+		if type(message) == "table" then
+			local text = message.text or ''
+			local title = message.title or ''
+			exports['sd-notify']:Notify(title, text, length, type)
+		else
+			exports['sd-notify']:Notify("", message, length, type)
+		end
     end
 end
 ```
