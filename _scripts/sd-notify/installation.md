@@ -37,13 +37,17 @@ end
 
 ### ESX Legacy 1.8.5
 ```lua
-function ESX.ShowNotification(message, type, length)
+function ESX.ShowNotification(message, _type, _length)
     if GetResourceState("sd-notify") ~= "missing" then
         if type(message) == "table" then
             local text = message.text or ''
             local title = message.title or ''
+            _type = _type or 'info'
+            _length = _length or 5000
             exports['sd-notify']:Notify(title, text, length, type)
         else
+            _type = _type or 'info'
+            _length = _length or 5000
             exports['sd-notify']:Notify("", message, length, type)
         end
     else
@@ -54,7 +58,7 @@ end
 
 ### ESX Legacy 1.7.5
 ```lua
-function ESX.ShowNotification(message, type, length)
+function ESX.ShowNotification(message, _type, _length)
     if Config.NativeNotify then 
         BeginTextCommandThefeedPost('STRING')
         AddTextComponentSubstringPlayerName(message)
@@ -63,9 +67,13 @@ function ESX.ShowNotification(message, type, length)
         if type(message) == "table" then
             local text = message.text or ''
             local title = message.title or ''
-            exports['sd-notify']:Notify(title, text, length, type)
+            _type = _type or 'info'
+            _length = _length or 5000
+            exports['sd-notify']:Notify(title, text, _length, _type)
         else
-            exports['sd-notify']:Notify("", message, length, type)
+            _type = _type or 'info'
+            _length = _length or 5000
+            exports['sd-notify']:Notify("", message, _length, _type)
         end
     end
 end
