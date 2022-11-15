@@ -18,6 +18,9 @@ ___
 
 ___
 
+{: .note }
+if you experience notifications getting stuck when using a lower-end pc, make sure to check 'Fix UI Lag at high GPU usage in FiveM'
+
 **Client Side**
 ```lua
 exports['sd-notify']:Notify('Title', 'Message', length, type, position)

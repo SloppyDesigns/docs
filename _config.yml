@@ -37,6 +37,8 @@ just_the_docs:
   collections:
     scripts:
       name: SCRIPTS
+    free:
+      name: FREE RELEASE
     others:
       name: OTHERS
     
