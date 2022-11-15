@@ -17,6 +17,23 @@ aux_links:
   "YouTube":
     - "//youtube.com/channel/UC3t4WYhIvjhGXPNyv0Qh43g"
 
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+    
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
 
