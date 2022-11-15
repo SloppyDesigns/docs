@@ -29,6 +29,9 @@ collections:
   scripts:
     permalink: "/:collection/:path/"
     output: true
+  free:
+    permalink: "/:collection/:path/"
+    output: true
   others:
     permalink: "/:collection/:path/"
     output: true
