@@ -19,7 +19,7 @@ ___
 ___
 
 {: .warning }
-if you experience notifications getting stuck when using a lower-end pc, make sure to check 'Fix UI Lag at high GPU usage in FiveM'
+if you experience notifications getting stuck when using a lower-end pc, make sure to check 'Fix UI Lag at high GPU usage in FiveM Settings'
 
 **Client Side**
 ```lua
