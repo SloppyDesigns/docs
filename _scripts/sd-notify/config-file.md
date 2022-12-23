@@ -2,6 +2,10 @@
 layout: default
 title: Config File
 parent: SD-Notify
+prev_page: /scripts/sd-notify/installation
+next_page: /scripts/sd-notify/themes
+prev_title: Installation
+next_title: Themes
 nav_order: 3
 ---
 
