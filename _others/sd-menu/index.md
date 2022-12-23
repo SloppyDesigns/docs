@@ -4,11 +4,11 @@ title: SD-Menu
 nav_order: 1
 has_children: true
 has_toc: false
-prev: /index
-next: /others/sd-menu/config-file
+prev_page: /index
+next_page: /scripts/sd-menu/installation
 prev_title: About Us
-next_title: Config File
-permalink: /others/sd-menu
+next_title: Installation
+permalink: /scripts/sd-menu
 ---
 
 # SD-Menu
