@@ -2,6 +2,10 @@
 layout: default
 title: Installation
 parent: SD-Notify
+prev_page: /scripts/sd-notify
+next_page: /scripts/sd-notify/config-file
+prev_title: SD-Notify
+next_title: Config File
 nav_order: 2
 ---
 
