@@ -13,12 +13,13 @@ nav_order: 1
 
 ## The following Config Options are mapped by default
 
-### Auto Detect Menu & Input Version [Optional]
+### Auto Detect Menu & Input Version, Default: false [Optional]
+
 ```lua
 Config.SDAutoVersion = true
 ```
 
-###
+### Menu Version
 
 | option       | resource          |
 |:-------------|:------------------|
@@ -32,7 +33,16 @@ Config.SDAutoVersion = true
 Config.SDMenuVersion = 'ox'
 ```
 
-### 
+### Input Version
+
+| option       | resource          |
+|:-------------|:------------------|
+| v1           | nh-keyboard v1 
+| v2           | nh-keyboard v2
+| zf           | zf_dialog
+| qb           | qb-input 
+| ox           | ox_lib 
+
 ```lua
 Config.SDInputVersion = 'ox'
 ```
