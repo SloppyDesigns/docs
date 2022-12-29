@@ -63,8 +63,10 @@ lua54 'yes'
 ### Resource
 You can also run sd-menu as standalone resource by downloading the github source code and removing the **client/main.lua** example code, and removing the client script from the **fxmanifest.lua**
 
+{: .important }
+Remove This When Run SD-Menu as Standalone
+
 ```lua
--- Remove This When Run SD-Menu as Standalone
 client_scripts {
     'client/main.lua'
 }
