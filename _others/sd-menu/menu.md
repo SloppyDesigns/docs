@@ -3,9 +3,9 @@ layout: default
 title: Menu
 parent: SD-Menu
 prev_page: /index
-next_page: /others/sd-menu/menu
+next_page: /others/sd-menu/input
 prev_title: About Us
-next_title: Menu
+next_title: Input
 nav_order: 2
 ---
 
@@ -56,7 +56,7 @@ exports['Your-Resource-Name']:CreateMenu({
 })
 
 RegisterNetEvent('your-event', function(arg1, arg2, arg3)
-    print(arg1, arg2)
+    print(arg1, arg2, arg3)
     -- Result:  MyFirstArg  MySecondArg true
 end)
 ```
