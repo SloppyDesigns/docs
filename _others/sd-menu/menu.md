@@ -2,10 +2,10 @@
 layout: default
 title: Menu
 parent: SD-Menu
-prev: /others/sd-menu/config-file
-next: /others/sd-menu/input
-prev_title: Config
-next_title: Input
+prev_page: /index
+next_page: /others/sd-menu/menu
+prev_title: About Us
+next_title: Menu
 nav_order: 2
 ---
 
