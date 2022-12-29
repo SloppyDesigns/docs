@@ -21,6 +21,7 @@ nav_order: 2
 | params       | Parameters Table        | table
 
 ## Parameters Table
+
 | option       | description             | type              |
 |:-------------|:------------------------|:------------------|
 | server       | Is Server Event         | boolean
