@@ -5,9 +5,9 @@ nav_order: 1
 has_children: true
 has_toc: false
 prev_page: /index
-next_page: /others/sd-menu/installation
+next_page: /others/sd-menu/config-file
 prev_title: About Us
-next_title: Installation
+next_title: Config
 permalink: /others/sd-menu
 ---
 
@@ -61,7 +61,7 @@ lua54 'yes'
 ```
 
 ### Resource
-You can also run sd-menu as standalone resource by download the github source code and removing the **client/main.lua** example code, and removing the client script from the **fxmanifest.lua**
+You can also run sd-menu as standalone resource by downloading the github source code and removing the **client/main.lua** example code, and removing the client script from the **fxmanifest.lua**
 
 ```lua
 -- Remove This When Run SD-Menu as Standalone

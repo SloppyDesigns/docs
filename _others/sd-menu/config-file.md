@@ -3,9 +3,9 @@ layout: default
 title: Config File
 parent: SD-Menu
 prev_page: /index
-next_page: /others/sd-menu/installation
+next_page: /others/sd-menu/menu
 prev_title: About Us
-next_title: Installation
+next_title: Menu
 nav_order: 1
 ---
 
