@@ -19,7 +19,7 @@ nav_order: 1
 Config.SDAutoVersion = true
 ```
 
-### Menu Version
+### Menu Version [Required] (Optional When Using Auto Detect)
 
 | option       | resource          |
 |:-------------|:------------------|
@@ -33,7 +33,7 @@ Config.SDAutoVersion = true
 Config.SDMenuVersion = 'ox'
 ```
 
-### Input Version
+### Input Version [Required] (Optional When Using Auto Detect)
 
 | option       | resource          |
 |:-------------|:------------------|
