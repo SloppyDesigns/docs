@@ -13,7 +13,7 @@ permalink: /others/sd-menu
 
 # SD-Menu
 
-SD-Menu is Developer Tool for FiveM that allows you to support multiple menus and inputs using a single export
+SD-Menu is Developer Tool for FiveM that allows you to support multiple menus and inputs using a single export and also adds [Font Awesome](https://fontawesome.com/) support to menu's without code changes.
 
 ## Currently Supported Menu's
 - nh-context v1
