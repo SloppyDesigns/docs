@@ -37,6 +37,7 @@ You can inlude sd-menu in your resource without having to depend on another reso
 {: .warning }
 Keep in mind if you want to use **ox_lib** you have to include the **@ox_lib/init.lua** in your **fxmanifest.lua**
 
+{% highlight markdown %} 
 ```lua
 fx_version 'cerulean'
 game 'gta5'
@@ -59,6 +60,7 @@ server_scripts {
 
 lua54 'yes'
 ```
+{% endhighlight %}
 
 ### Resource
 You can also run sd-menu as standalone resource by downloading the github source code and removing the **client/main.lua** example code, and removing the client script from the **fxmanifest.lua**

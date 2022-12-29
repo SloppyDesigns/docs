@@ -35,7 +35,7 @@ callouts:
     color: red
 
 # For copy button on code
-enable_copy_code_button: false
+enable_copy_code_button: true
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
