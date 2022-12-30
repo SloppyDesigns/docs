@@ -26,7 +26,7 @@ nav_order: 2
 | option       | description             | type              |
 |:-------------|:------------------------|:------------------|
 | server       | Is Server Event         | boolean
-| event        | Set Event               | string
+| event        | Set Trigger Event       | string
 | args         | Set Arguments           | any
 
 ## Example
