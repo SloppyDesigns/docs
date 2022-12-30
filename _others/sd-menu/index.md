@@ -38,9 +38,6 @@ SD-Menu is Developer Tool for FiveM that allows you to support multiple menus an
 ### Library (In Your Resource)
 You can inlude sd-menu in your resource without having to depend on another resource, simply add **lib/sd-menu.lua** to your resource and include it in your **fxmanifest.lua** on the client side.
 
-{: .warning }
-Keep in mind if you want to use **ox_lib** you have to include the **@ox_lib/init.lua** in your **fxmanifest.lua**
-
 ```lua
 fx_version 'cerulean'
 game 'gta5'
@@ -49,7 +46,6 @@ description 'Your Resource'
 
 shared_scripts {
     'config.lua',
-    '@ox_lib/init.lua' -- Required: When Using OX Menu
 }
 
 client_scripts {
