@@ -27,7 +27,7 @@ nav_order: 3
 ## Example
 
 ```lua
-local input, input1, input2 = exports['sd-menu']:CreateInput({
+local input, input1, input2 = exports['Your-Resource-Name']:CreateInput({
     header = 'Header Text',
     inputs = {
         {
