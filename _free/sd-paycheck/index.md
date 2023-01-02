@@ -26,9 +26,11 @@ Simple Resource to add Paycheck System to your Server without all the hassle.
 1. Open qb-core/server/functions.lua
 2. Go to Line 168 or search for **PayCheckInterval()**
 3. Replace **Player.Functions.AddMoney('bank', payment)** with **TriggerEvent('sd-paycheck:server:AddPaycheck', payment, Player.PlayerData.source)**
-4. Restart Server.
+4. Run the **sd-paycheck.sql** in your database
+5. Restart Server.
 
 ## ESX
 1. Open es_extended/server/paycheck.lua
 2. Replace **xPlayer.addAccountMoney('bank', salary)** with **TriggerEvent('sd-paycheck:server:AddPaycheck', salary, xPlayer.source)**
-3. Restart Server.
+3. Run the **sd-paycheck.sql** in your database
+4. Restart Server.

@@ -2,8 +2,8 @@
 layout: default
 title: Config
 parent: SD-Paycheck
-prev_page: /free/sd-paycheck/config
-prev_title: Config
+prev_page: /free/sd-paycheck
+prev_title: SD-Paycheck
 nav_order: 1
 ---
 
@@ -12,7 +12,7 @@ nav_order: 1
 ```lua
 Config = {}
 Config.Debug = false
-Config.Target = 'qb-target' -- qb-target / bt-target / qtarget
+Config.Target = 'qb-target' -- qb-target / qtarget
 
 -- Pay Paycheck in Cash other wise deposited to bank
 Config.CashOut = false
