@@ -39,20 +39,21 @@ end
 2. Search for **ESX.ShowNotification**
 3. Replace with the code below.
 
-### ESX Legacy 1.8.5
+### ESX Legacy 1.8.5+
 ```lua
 function ESX.ShowNotification(message, _type, _length)
     if GetResourceState("sd-notify") ~= "missing" then
+        if type(_type) ~= "string" then _type = "info" end
         if type(message) == "table" then
             local text = message.text or ''
             local title = message.title or ''
             _type = _type or 'info'
             _length = _length or 5000
-            exports['sd-notify']:Notify(title, text, length, type)
+            return exports['sd-notify']:Notify(title, text, _length, _type)
         else
             _type = _type or 'info'
             _length = _length or 5000
-            exports['sd-notify']:Notify("", message, length, type)
+            return exports['sd-notify']:Notify("", message, _length, _type)
         end
     else
         print("[^1ERROR^7] ^5SD Notify^7 is Missing!")
@@ -73,11 +74,11 @@ function ESX.ShowNotification(message, _type, _length)
             local title = message.title or ''
             _type = _type or 'info'
             _length = _length or 5000
-            exports['sd-notify']:Notify(title, text, _length, _type)
+            return exports['sd-notify']:Notify(title, text, _length, _type)
         else
             _type = _type or 'info'
             _length = _length or 5000
-            exports['sd-notify']:Notify("", message, _length, _type)
+            return exports['sd-notify']:Notify("", message, _length, _type)
         end
     end
 end
