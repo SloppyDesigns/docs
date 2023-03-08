@@ -34,7 +34,7 @@ TriggerClientEvent('sd-notify:Notify', source, 'Title', 'Message', length, type,
 ```
 
 # Promise
-## Notification That Stays Until It's Closed 
+### Notification That Stays Until It's Closed 
 <br />
 
 **Client Side**
@@ -43,7 +43,7 @@ exports['sd-notify']:Promise(title, message, type, position, sound)
 ```
 
 # Update
-## Update A Promise Notification 
+### Update A Promise Notification 
 <br />
 
 **Client Side**
@@ -51,7 +51,7 @@ exports['sd-notify']:Promise(title, message, type, position, sound)
 exports['sd-notify']:Update(id, title, message, time, type, position, hideprogressbar, sound)
 ```
 # RemoveAll
-## Remove All Notifications On Screen
+### Remove All Notifications On Screen
 
 **Export**
 ```lua
@@ -64,7 +64,7 @@ exports['sd-notify']:RemoveAll()
 ```
 
 # Remove
-## Remove An Specific Notification
+### Remove An Specific Notification
 
 **Export**
 ```lua
