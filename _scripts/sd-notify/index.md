@@ -12,7 +12,7 @@ permalink: /scripts/sd-notify
 ---
 
 # SD-Notify
-## Next Generation Notification System
+### Next Generation Notification System
 
 <iframe src="https://www.youtube.com/embed/p4fk_fKc0IM?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="100%" allowtransparency="true" frameborder="0"></iframe>
 
@@ -20,7 +20,8 @@ permalink: /scripts/sd-notify
 if you experience notifications getting stuck when using a lower-end pc, make sure to check 'Fix UI Lag at high GPU usage in FiveM Settings'
 
 # Notify
-## Simple Notification 
+### Simple Notification 
+<br />
 
 **Client Side**
 ```lua
@@ -34,6 +35,7 @@ TriggerClientEvent('sd-notify:Notify', source, 'Title', 'Message', length, type,
 
 # Promise
 ## Notification That Stays Until It's Closed 
+<br />
 
 **Client Side**
 ```lua
@@ -42,6 +44,7 @@ exports['sd-notify']:Promise(title, message, type, position, sound)
 
 # Update
 ## Update A Promise Notification 
+<br />
 
 **Client Side**
 ```lua
@@ -80,14 +83,14 @@ Every Notify including Promise and Update return a unique id to update or to rem
 
 ## Options
 | name            | type        | required |
-|:----------------|:------------|:------|
-| title           | string      | yes |
-| message         | string      | yes |
-| time            | number      | yes |
-| type            | string      | yes |
-| position        | string      | no |
-| hideprogressbar | boolean     | no |
-| sound           | boolean     | no |
+|:----------------|:------------|:---------|
+| title           | string      | yes      |
+| message         | string      | yes      |
+| time            | number      | yes      |
+| type            | string      | yes      |
+| position        | string      | no       |
+| hideprogressbar | boolean     | no       |
+| sound           | boolean     | no       |
 
 ## Types
 - primary
