@@ -14,7 +14,7 @@ permalink: /scripts/sd-notify
 # SD-Notify
 ## Next Generation Notification System
 
-<iframe src="https://www.youtube.com/embed/p4fk_fKc0IM?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/p4fk_fKc0IM?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="100%" allowtransparency="true" frameborder="0"></iframe>
 
 {: .warning }
 if you experience notifications getting stuck when using a lower-end pc, make sure to check 'Fix UI Lag at high GPU usage in FiveM Settings'
