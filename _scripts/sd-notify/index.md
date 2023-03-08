@@ -83,6 +83,7 @@ Every Notify including Promise and Update return a unique id to update or to rem
 | ok           | good `zoute` drop | yumm     |
 
 ## Options
+
 | name            | type        | required |
 |:----------------|:------------|:---------|
 | title           | string      | yes      |
