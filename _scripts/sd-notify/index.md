@@ -74,12 +74,12 @@ exports['sd-notify']:Remove(id)
 {: .important-title }
 Every Notify including Promise and Update return a unique id to update or to remove them
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| name         | type              | required |
+|:-------------|:------------------|:---------|
+| ok           | good swedish fish | nice     |
+| out of stock | good and plenty   | nice     |
+| ok           | good `oreos`      | hmm      |
+| ok           | good `zoute` drop | yumm     |
 
 ## Options
 | name            | type        | required |
