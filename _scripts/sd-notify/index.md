@@ -19,7 +19,8 @@ permalink: /scripts/sd-notify
 {: .warning }
 if you experience notifications getting stuck when using a lower-end pc, make sure to check 'Fix UI Lag at high GPU usage in FiveM Settings'
 
-# Notify 
+# Notify
+## Simple Notification 
 
 **Client Side**
 ```lua
@@ -30,6 +31,46 @@ exports['sd-notify']:Notify('Title', 'Message', time, type, position, hideprogre
 ```lua
 TriggerClientEvent('sd-notify:Notify', source, 'Title', 'Message', length, type, position, hideprogressbar, sound)
 ```
+
+# Promise
+## Notification That Stays Until It's Closed 
+
+**Client Side**
+```lua
+exports['sd-notify']:Promise(title, message, type, position, sound)
+```
+
+# Update
+## Update A Promise Notification 
+
+**Client Side**
+```lua
+exports['sd-notify']:Update(id, title, message, time, type, position, hideprogressbar, sound)
+```
+# RemoveAll
+## Remove All Notifications On Screen
+
+**Export**
+```lua
+exports['sd-notify']:RemoveAll()
+```
+
+**Command**
+```lua
+/clearnotify
+```
+
+# Remove
+## Remove An Specific Notification
+
+**Export**
+```lua
+exports['sd-notify']:Remove(id)
+```
+
+{: .important-title }
+Every Notify including Promise and Update return a unique id to update or to remove them
+
 
 ## Options
 | name            | type        | required |
@@ -63,4 +104,3 @@ You can add any custom type in the config.lua
 - bottom-center
 - right-center
 - left-center
-
