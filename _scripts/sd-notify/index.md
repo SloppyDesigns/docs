@@ -25,12 +25,12 @@ if you experience notifications getting stuck when using a lower-end pc, make su
 
 **Client Side**
 ```lua
-exports['sd-notify']:Notify('Title', 'Message', time, type, position, hideprogressbar, sound)
+exports['sd-notify']:Notify(title, message, time, type, position, hideprogressbar, sound)
 ```
 
 **Server Side**
 ```lua
-TriggerClientEvent('sd-notify:Notify', source, 'Title', 'Message', length, type, position, hideprogressbar, sound)
+TriggerClientEvent('sd-notify:Notify', source, title, message, length, type, position, hideprogressbar, sound)
 ```
 
 # Promise
