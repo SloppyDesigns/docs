@@ -2,9 +2,9 @@
 layout: default
 title: Themes
 parent: SD-Notify
-prev_page: /scripts/sd-notify/config-file
-prev_title: Config File
-nav_order: 4
+prev_page: /scripts/sd-notify/examples
+prev_title: Examples
+nav_order: 5
 ---
 
 # Themes
