@@ -22,6 +22,7 @@ Config.Merchants['YourMerchantName'] = {
 ```
 
 ## Merchant Type
+
 | name            | type        | required |
 |:----------------|:------------|:---------|
 | title           | string      | yes      |
