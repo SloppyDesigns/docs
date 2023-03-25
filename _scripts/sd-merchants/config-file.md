@@ -5,4 +5,10 @@ parent: SD-Merchants
 nav_order: 2
 ---
 
-# Config File
+# cl_config.lua
+```lua
+-- ❗ CLIENT NOTIFICATION ❗
+Config.Notification = function(title, message, type, time)
+    QBCore.Functions.Notify({ caption = title, text = message }, type, time)
+end
+```
