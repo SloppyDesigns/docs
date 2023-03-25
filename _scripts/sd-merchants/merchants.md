@@ -22,7 +22,12 @@ Config.Merchants['YourMerchantName'] = {
 ```
 
 ## Merchant Type
-| type            | modes            
-|:----------------|:-----------------
-| server          | ped              
-| client          | ped, model, zone 
+| name            | type        | required |
+|:----------------|:------------|:---------|
+| title           | string      | yes      |
+| message         | string      | yes      |
+| time            | number      | yes      |
+| type            | string      | yes      |
+| position        | string      | no       |
+| hideprogressbar | boolean     | no       |
+| sound           | boolean     | no       |
