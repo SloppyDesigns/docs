@@ -15,9 +15,7 @@ Create a merchant by creating a new lua file and name it anything you want.
 
 ```lua
 Config.Merchants['YourMerchantName'] = {
-
     type = "",
-
 }
 ```
 
@@ -28,3 +26,26 @@ Config.Merchants['YourMerchantName'] = {
 | server          | ped              |
 | client          | ped, model, zone |
 
+
+## Ped (Server)
+
+```lua
+['ped'] = {
+    model = `ped_model`,
+    coords = {
+        vector3(0.00, 0.00, 0.00),
+    }
+},
+```
+
+| name            | type           | required |
+|:----------------|:---------------|:---------|
+| mode            | hash           | yes      |
+| coords          | table(vector3) | yes      |
+
+
+## Ped (Client)
+
+## Model (Client)
+
+## Zone (Client)
