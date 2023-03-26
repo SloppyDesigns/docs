@@ -30,6 +30,7 @@ nav_order: 2
 | requirement     | table          | no           | [Requirement](#requirement) To Access Merchant |
 
 ## Requirement
+
 | name            | type           | required     | description                    |
 |:----------------|:---------------|:-------------|:-------------------------------|
 | currency        | string         | yes          | [Currency](config-file/#sv_currencieslua)                   |  
