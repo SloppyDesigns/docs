@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Shop
+title: Log
 parent: SD-Merchants
 nav_order: 7
 ---
 
-# Shop
+# Log

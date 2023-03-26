@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Shop
+title: Options
 parent: SD-Merchants
 nav_order: 5
 ---
 
-# Shop
+# Options
