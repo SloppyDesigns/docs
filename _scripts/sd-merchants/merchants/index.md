@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Merchants
-parent: SD-Merchants
-nav_order: 2
+parent: SD-Merchants/merchants
+nav_order: 1
 ---
 
 # Merchants
