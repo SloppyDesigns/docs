@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Log
-parent: SD-Merchants
-grand_parent: Merchants
+parent: Merchants
+grand_parent: SD-Merchants
 nav_order: 5
 ---
 

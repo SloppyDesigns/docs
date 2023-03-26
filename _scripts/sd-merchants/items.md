@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Items
-parent: SD-Merchants
-grand_parent: Merchants
+parent: Merchants
+grand_parent: SD-Merchants
 nav_order: 4
 ---
 
