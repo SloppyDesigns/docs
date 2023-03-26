@@ -2,7 +2,8 @@
 layout: default
 title: Shop
 parent: SD-Merchants
-nav_order: 4
+grand_parent: Merchants
+nav_order: 2
 ---
 
 # Shop

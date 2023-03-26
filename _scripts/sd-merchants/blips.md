@@ -2,7 +2,8 @@
 layout: default
 title: Blips
 parent: SD-Merchants
-nav_order: 3
+grand_parent: Merchants
+nav_order: 1
 ---
 
 # Blips
