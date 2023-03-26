@@ -32,7 +32,7 @@ nav_order: 3
 | rotation        | number         | Camera Rotation |
 | colour          | number         | [Colours](https://docs.fivem.net/docs/game-references/blips/#blip-colors) |
 | shortrange      | boolean        | Show When Closeby |
-| display         | number         | [Blip Display](#Blip Display) |
+| display         | number         | [Blip Display](#blip-display) |
 | alpha           | number         | Transparency From 0 to 255 |
 
 ## Coord
@@ -105,6 +105,7 @@ nav_order: 3
 | type            | string         | Blip Type       |
 
 ## Blip Display
+
 | number          | behaviour                                                   |
 |:----------------|:------------------------------------------------------------|
 | 0               | Doesn't show up, ever, anywhere.                            |
