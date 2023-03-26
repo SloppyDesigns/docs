@@ -111,13 +111,18 @@ nav_order: 3
 ```lua
 ['blip'] = {
     type = 'radiusicon',
-    coords = vector3(),
-    radius = 0,
-    colour = 0,
+    coords = vector3(0.0, 0.0, 0.0),
+    radius = 0.0,
+    radius_colour = 0,
+    radius_alpha = 0,
+    icon_colour = 0,
+    icon_alpha = 0,
+    sprite = 0,
+    scale = 0.0,
     shortrange = true,
     display = 0,
-    alpha = 0,
-}
+    name = 'Blip Name'
+},
 ```
 
 | name            | type           | description     |
