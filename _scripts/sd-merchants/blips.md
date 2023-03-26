@@ -51,7 +51,15 @@ nav_order: 3
 
 | name            | type           | description     |
 |:----------------|:---------------|:----------------|
-| type            | string         | Blip Type       |
+| type            | string         | Type            |
+| coords          | vector3        | Location        |
+| sprite          | number         | [Sprites](https://docs.fivem.net/docs/game-references/blips/#blips)      |
+| scale           | number         | Scale Size      |
+| colour          | number         | [Colours](https://docs.fivem.net/docs/game-references/blips/#blip-colors) |
+| shortrange      | boolean        | Show When Closeby |
+| display         | number         | [Blip Display](#blip-display) |
+| alpha           | number         | Transparency From 0 to 255 |
+| name            | string         | Name |
 
 ## Entity (Server Ped Only)
 ```lua
@@ -68,7 +76,13 @@ nav_order: 3
 
 | name            | type           | description     |
 |:----------------|:---------------|:----------------|
-| type            | string         | Blip Type       |
+| type            | string         | Type            |
+| sprite          | number         | [Sprites](https://docs.fivem.net/docs/game-references/blips/#blips)      |
+| scale           | number         | Scale Size      |
+| colour          | number         | [Colours](https://docs.fivem.net/docs/game-references/blips/#blip-colors) |
+| shortrange      | boolean        | Show When Closeby |
+| display         | number         | [Blip Display](#blip-display) |
+| name            | string         | Name |
 
 ## Radius
 ```lua
@@ -85,7 +99,13 @@ nav_order: 3
 
 | name            | type           | description     |
 |:----------------|:---------------|:----------------|
-| type            | string         | Blip Type       |
+| type            | string         | Type            |
+| coords          | vector3        | Location        |
+| radius          | number         | Radius Size     |
+| colour          | number         | [Colours](https://docs.fivem.net/docs/game-references/blips/#blip-colors) |
+| shortrange      | boolean        | Show When Closeby |
+| display         | number         | [Blip Display](#blip-display) |
+| alpha           | number         | Transparency From 0 to 255 |
 
 ## Radius + Icon
 ```lua
@@ -102,7 +122,19 @@ nav_order: 3
 
 | name            | type           | description     |
 |:----------------|:---------------|:----------------|
-| type            | string         | Blip Type       |
+| type            | string         | Type            |
+| coords          | vector3        | Location        |
+| radius          | number         | Radius Size     |
+| radius_colour   | number         | [Colours](https://docs.fivem.net/docs/game-references/blips/#blip-colors) |
+| radius_alpha    | number         | Transparency From 0 to 255 |
+| icon_colour     | number         | [Colours](https://docs.fivem.net/docs/game-references/blips/#blip-colors) |
+| icon_alpha      | number         | Transparency From 0 to 255 |
+| sprite          | number         | [Sprites](https://docs.fivem.net/docs/game-references/blips/#blips)      |
+| scale           | number         | Scale Size      |
+| shortrange      | boolean        | Show When Closeby |
+| display         | number         | [Blip Display](#blip-display) |
+| name            | string         | Name |
+
 
 ## Blip Display
 
