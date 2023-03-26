@@ -21,8 +21,11 @@ nav_order: 4
 }
 ```
 
-| name            | type           | required     | description               | options              |
-|:----------------|:---------------|:-------------|:--------------------------|:---------------------|
-| type            | string         | yes          | Type                      | buy, sell, market    |
-| title           | string         | yes          | Title For UI              | |
-| collect         | boolean        | no           | Disable Collect For Market| |
+| name            | type           | required     | description                    | options              |
+|:----------------|:---------------|:-------------|:-------------------------------|:---------------------|
+| type            | string         | yes          | Type                           | buy, sell, market    |
+| title           | string         | yes          | Title For UI                   | |
+| collect         | boolean        | no           | Disable Collect For Market     | |
+| requirement     | table          | no           | [Requirement To Access Merchant](#requirement) | |
+
+## Requirement
