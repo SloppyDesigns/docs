@@ -14,7 +14,7 @@ permalink: /scripts/sd-merchants
 # SD-Merchants
 <br />
 
-<iframe src="https://www.youtube.com/embed/9meXfvIVbCk?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="100%" height="420" allowtransparency="true" frameborder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/9meXfvIVbCk?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="100%" height="430" allowtransparency="true" frameborder="0"></iframe>
 
 <br />
 
