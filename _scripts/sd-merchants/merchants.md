@@ -81,6 +81,7 @@ Config.Merchants['YourMerchantName'] = {
 | animation       | table          | no       |
 
 ### Animation
+
 | name            | type           | required |
 |:----------------|:---------------|:---------|
 | name            | string         | yes      |
