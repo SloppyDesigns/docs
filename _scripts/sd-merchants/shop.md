@@ -33,7 +33,7 @@ nav_order: 2
 
 | name            | type           | required     | description                    |
 |:----------------|:---------------|:-------------|:-------------------------------|
-| currency        | string         | yes          | [Currency](config-file/#sv_currencieslua)                   |  
+| currency        | string         | yes          | [Currency](../config-file/#sv_currencieslua)                   |  
 | item            | string         | no           | Item If Using Item Currency    | 
 | amount          | number         | yes          | Amount Required                | 
 | remove          | boolean        | yes          | Should Currency Be Removed     |
