@@ -25,8 +25,8 @@ nav_order: 4
 |:----------------|:---------------|:-------------|:--------------------------------|
 | name            | string         | yes          | Name                            | 
 | price           | string         | yes          | Price                           |
-| amount          | string         | yes          | Amount (Avaible On Server Start)|
+| amount          | string         | yes          | Amount (Avaible On Server Start) For Buying And Selling |
 | info            | string         | yes          | Metadata (Applied When Buying An Item) |
 | currency        | string         | yes          | [Currency](../config-file/#sv_currencieslua) |
 | category        | string         | yes          | Category For UI Filtering       |
-| limited         | string         | yes          | Remove Item From Stock To Limit Amount That Can Be Purchased During Server Restarts |
+| limited         | string         | no           | Remove Item From Stock To Limit Amount That Can Be Purchased Or Sold During Server Restarts |
