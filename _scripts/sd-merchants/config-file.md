@@ -233,7 +233,154 @@ Config.Currencies['item'] = {
 }
 ```
 
-## sv_inventory.lua (ESX Only)
+## sv_inventory.lua
+
+## QBCore
+```lua
+ox_inventory = nil
+
+if GetResourceState('ox_inventory'):find('start') then
+    ox_inventory = exports.ox_inventory
+end
+
+function AddInventoryItem(src, item, amount, info)
+    if ox_inventory then
+        if ox_inventory:CanCarryItem(src, item, amount) then
+            ox_inventory:AddItem(src, item, amount, info)
+            return true
+        else
+            return false
+        end
+    else
+        local Player = QBCore.Functions.GetPlayer(src)
+        local itemInfo = QBCore.Shared.Items[item:lower()]
+        info = info or {}
+        if itemInfo['unique'] and amount > 1 then
+            local itemsAdded = 0
+            for i = 1, amount do
+                if Player.Functions.AddItem(item, 1, false, info) then
+                    itemsAdded = itemsAdded + 1
+                end
+            end
+
+            if itemsAdded == amount then
+                return true
+            else
+                for i = 1, itemsAdded do
+                    Player.Functions.RemoveItem(item, 1)
+                end
+                return false
+            end
+            TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item], "add", amount)
+        else
+            if Player.Functions.AddItem(item, amount, false, info) then
+                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item], "add", amount)
+                return true
+            else
+                return false
+            end
+        end
+    end
+end
+
+function RemoveInventoryItem(src, item, amount, info, slot)
+    if ox_inventory then
+        return ox_inventory:RemoveItem(src, item, amount, info, slot)
+    else
+        local Player = QBCore.Functions.GetPlayer(src)
+        if slot then
+            if Player.Functions.GetItemBySlot(slot) and Player.Functions.RemoveItem(item, amount, slot) then
+                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item], "remove", amount)
+                return true
+            else
+                return false
+            end
+        else
+            local removed = amount
+            local items = Player.Functions.GetItemsByName(item)
+            for _, v in pairs(items) do
+                if removed >= v.amount then
+                    if Player.Functions.RemoveItem(item, v.amount) then removed = removed - v.amount end
+                else
+                    if Player.Functions.RemoveItem(item, removed) then removed = removed - removed end
+                end
+                if removed == 0 then break end
+            end
+            if removed == 0 then
+                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item], "remove", amount)
+                return true
+            else
+                AddInventoryItem(src, item, (amount - removed))
+                return true
+            end
+        end
+    end
+end
+
+function GetInventoryItem(src, item, info)
+    if ox_inventory then
+        return ox_inventory:Search(src, 'slots', item, info)
+    else
+        local Player = QBCore.Functions.GetPlayer(src)
+        return Player.Functions.GetItemsByName(item)
+    end
+end
+
+function GetInventoryItemCount(src, item)
+    if ox_inventory then
+        return ox_inventory:GetItem(src, item, nil, true)
+    else
+        local Player = QBCore.Functions.GetPlayer(src)
+        local items = Player.Functions.GetItemsByName(item)
+        local amount = 0
+        for _, v in pairs(items) do amount = amount + v.amount end
+        return amount
+    end
+end
+
+function GetItemLabel(item)
+    if ox_inventory then
+        return ox_inventory:Items()[item].label
+    else
+        return QBCore.Shared.Items[item]['label']
+    end
+end
+
+function GetItemDescription(item)
+    if ox_inventory then
+        return ox_inventory:Items()[item].description
+    else
+        return QBCore.Shared.Items[item]['description']
+    end
+end
+
+function GetInventoryImage(item)
+    if ox_inventory then
+        return item .. '.png'
+    else
+        return QBCore.Shared.Items[item]['image']
+    end
+end
+
+function GetInventoryItemMetadata(src, item, slot)
+    if ox_inventory then
+        return ox_inventory:GetSlot(src, slot)?.metadata
+    else
+        local Player = QBCore.Functions.GetPlayer(src)
+        return Player.Functions.GetItemBySlot(slot)?.info
+    end
+end
+
+function CanInventoryItemStack(item)
+    if ox_inventory then
+        return ox_inventory:Items()[item]?.stack
+    else
+        return not QBCore.Shared.Items[item]['unique']
+    end
+end
+```
+
+## ESX
 ```lua
 function AddInventoryItem(src, item, amount, info)
     if CanCarryItem(src, item, amount) then
