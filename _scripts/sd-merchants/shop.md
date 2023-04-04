@@ -12,7 +12,8 @@ nav_order: 2
 ['shop'] = {
     type = "market",
     title = "Shop Title",
-    collect = false, 
+    collect = false,
+    empty = false,
     requirement = {
         currency = "currency",
         item = "item_name",
@@ -22,12 +23,14 @@ nav_order: 2
 }
 ```
 
-| name            | type           | required     | description                    | 
-|:----------------|:---------------|:-------------|:-------------------------------|
-| type            | string         | yes          | Type (buy, sell, market)       | 
-| title           | string         | yes          | Title For UI                   |
-| collect         | boolean        | no           | Disable Collect For Market     |
-| requirement     | table          | no           | [Requirement](#requirement) To Access Merchant |
+| name                | type           | required     | description                    | 
+|:--------------------|:---------------|:-------------|:-------------------------------|
+| type                | string         | yes          | Type (buy, sell, market)       | 
+| title               | string         | yes          | Title For UI                   |
+| collect             | boolean        | no           | Disable Collect For Market     |
+| empty               | boolean        | no           | Allow Viewing Empty Merchant   |
+| random_item_amount  | number         | no           | Random Item Amount To Select For The Shop |
+| requirement         | table          | no           | [Requirement](#requirement) To Access Merchant |
 
 ## Requirement
 

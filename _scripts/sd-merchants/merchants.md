@@ -38,19 +38,51 @@ Config.Merchants['YourMerchantName'] = {
 
 ## Ped (Server)
 
+### Single Path
 ```lua
 ['ped'] = {
     model = `ped_model`,
     coords = {
         vector3(0.0, 0.0, 0.0),
+        vector3(0.0, 0.0, 0.0),
+        vector3(0.0, 0.0, 0.0),
+        vector3(0.0, 0.0, 0.0),
     }
 },
 ```
 
+### Random Path
+```lua
+['ped'] = {
+    model = `ped_model`,
+    coords = {
+        {
+            vector3(0.0, 0.0, 0.0),
+            vector3(0.0, 0.0, 0.0),
+            vector3(0.0, 0.0, 0.0),
+            vector3(0.0, 0.0, 0.0),
+        },
+        {
+            vector3(0.0, 0.0, 0.0),
+            vector3(0.0, 0.0, 0.0),
+            vector3(0.0, 0.0, 0.0),
+            vector3(0.0, 0.0, 0.0),
+        },
+        {
+            vector3(0.0, 0.0, 0.0),
+            vector3(0.0, 0.0, 0.0),
+            vector3(0.0, 0.0, 0.0),
+            vector3(0.0, 0.0, 0.0),
+        } 
+    }
+},
+```
+
+
 | name            | type            | required |
 |:----------------|:----------------|:---------|
 | mode            | hash            | yes      |
-| coords          | table (vector3) | yes      |
+| coords          | table (vector3) / multi table(vector3)  | yes      |
 
 ## Weapon (Ped Server Only)
 
@@ -73,6 +105,7 @@ Config.Merchants['YourMerchantName'] = {
 
 ## Ped (Client)
 
+### Single Coord
 ```lua
 ['ped'] = {
     model = `ped_model`,
@@ -82,10 +115,25 @@ Config.Merchants['YourMerchantName'] = {
 },
 ```
 
+### Random Location
+```lua
+['ped'] = {
+    model = `ped_model`,
+    coords = {
+        vector4(0.0, 0.0, 0.0, 0.0),
+        vector4(0.0, 0.0, 0.0, 0.0),
+        vector4(0.0, 0.0, 0.0, 0.0),
+        vector4(0.0, 0.0, 0.0, 0.0),
+    },
+    scenario = 'scenario_name',
+    animation = { name = 'animation_name', dictionary = 'animation_dictionary' } 
+},
+```
+
 | name            | type           | required |
 |:----------------|:---------------|:---------|
 | mode            | hash           | yes      |
-| coords          | vector4        | yes      |
+| coords          | vector4/table  | yes      |
 | scenario        | string         | no       |
 | animation       | table          | no       |
 
