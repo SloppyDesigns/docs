@@ -14,6 +14,7 @@ nav_order: 2
     title = "Shop Title",
     collect = false,
     empty = false,
+    random_item_amount = 1,
     requirement = {
         currency = "currency",
         item = "item_name",
