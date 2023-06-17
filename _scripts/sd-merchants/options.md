@@ -14,18 +14,21 @@ nav_order: 3
         icon = 'Target Icon',
         job = 'Target Job',
         gang = 'Target Gang',
+        distance = 3.0
     },
     ['sell'] = {
         label = 'Target Label',
         icon = 'Target Icon',
         job = 'Target Job',
         gang = 'Target Gang',
+        distance = 3.0
     },
     ['collect'] = {
         label = 'Target Label',
         icon = 'Target Icon',
         job = 'Target Job',
         gang = 'Target Gang',
+        distance = 3.0
     }
 },
 ```
@@ -36,3 +39,4 @@ nav_order: 3
 | icon            | string         | yes          | Target Icon                    |
 | job             | string         | no           | Target Job                     |
 | gang            | string         | no           | Target Gang (QBCore Only)      |
+| distance        | number         | no           | Overwrite Target Distance      |
