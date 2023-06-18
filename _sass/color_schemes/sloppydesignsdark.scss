@@ -1,3 +1,26 @@
+$body-background-color: $grey-dk-300;
+$sidebar-color: $grey-dk-300;
+$border-color: $grey-dk-200;
+
+$body-text-color: $grey-lt-300;
+$body-heading-color: $grey-lt-000;
+$nav-child-link-color: $grey-dk-000;
+$search-result-preview-color: $grey-dk-000;
+
+$link-color: $blue-000;
+$btn-primary-color: $blue-200;
+$base-button-color: $grey-dk-250;
+
+$search-background-color: $grey-dk-250;
+$table-background-color: $grey-dk-250;
+$feedback-color: darken($sidebar-color, 3%);
+
+//
+// Both the following highlight themes are more legible than those used forthe light theme
+//
+
+$code-background-color: #1d1f21;
+
 /*! tomorrow night; https://github.com/MozMorris/tomorrow-pygments */
 .highlight, .highlight pre, .highlight table { background: #1d1f21 !important; color: #c5c8c6 !important; }
 .highlight .hll { background-color: #373b41 !important; }
