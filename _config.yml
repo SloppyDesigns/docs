@@ -46,6 +46,9 @@ search:
   button: false
 
 collections:
+  bridge:
+    permalink: "/:collection/:path/"
+    output: true
   scripts:
     permalink: "/:collection/:path/"
     output: true
@@ -58,6 +61,8 @@ collections:
 
 just_the_docs:
   collections:
+    bridge:
+      name: BRIDGE
     scripts:
       name: SCRIPTS
     free:
