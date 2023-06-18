@@ -46,9 +46,6 @@ search:
   button: false
 
 collections:
-  bridge:
-    permalink: "/:collection/:path/"
-    output: true
   scripts:
     permalink: "/:collection/:path/"
     output: true
