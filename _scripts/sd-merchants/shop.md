@@ -32,6 +32,7 @@ nav_order: 2
 | empty               | boolean        | no           | Allow Viewing Empty Merchant   |
 | random_item_amount  | number         | no           | Random Item Amount To Select For The Shop |
 | requirement         | table          | no           | [Requirement](#requirement) To Access Merchant |
+| close_after_transaction | boolean    | no           | Closes UI after transaction    |
 
 ## Requirement
 
