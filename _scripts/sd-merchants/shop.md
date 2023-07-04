@@ -21,6 +21,7 @@ nav_order: 2
         amount = 1,
         remove = false,
     },
+    close_after_transaction = false
 }
 ```
 
