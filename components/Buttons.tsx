@@ -1,5 +1,4 @@
 import React from 'react';
-//import { IconBrandGithub, IconTag, IconFileText, IconDownload, IconBrandNpm } from '@tabler/icons-react';
 import { AiFillGithub, AiOutlineDownload } from 'react-icons/ai';
 
 interface Props {
@@ -9,7 +8,7 @@ interface Props {
   link?: string;
 }
 
-const Button: React.FC = ({ side = 'left', children, icon, link }: Props) => {
+const Button: React.FC<Props> = ({ side = 'left', children, icon, link }: Props) => {
   return (
     <div className="h-fit w-fit">
       <a href={link}>
