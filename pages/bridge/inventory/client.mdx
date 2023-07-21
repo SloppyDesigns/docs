@@ -1,0 +1,71 @@
+# Inventory Client
+
+## OpenStash
+
+Opens an stash
+
+```lua
+Framework.OpenStash(name, slots, weight, owner, groups)
+```
+
+- name: `string`
+- slots: `number`
+- weight: `number`
+- owner?: `string | boolean`
+- groups?: `table`
+
+Open stash without owner or groups
+```lua
+Framework.OpenStash('mystash', 10, 5000)
+```
+
+Open stash unique to each player
+```lua
+Framework.OpenStash('mystash', 10, 5000, true)
+```
+
+Open stash with player as the owner
+```lua
+Framework.OpenStash('mystash', 10, 5000, Framework.Player.Identifier)
+```
+
+Open stash with groups
+```lua
+Framework.OpenStash('mystash', 10, 5000, nil, { ['police'] = 0, ['ambulance'] = 0 })
+
+Framework.OpenStash('mystash', 10, 5000, nil, { ['mygang'] = 0 })
+```
+
+## HasItem
+
+Check if a player has an item or items
+
+```lua
+Framework.HasItem(items, count, metadata)
+```
+
+- items: `string | string[] | table<string, number>`
+- count?: `number`
+- metadata?: `table`
+
+returns: `boolean`
+
+Checking a single item
+```lua
+Framework.HasItem('water_bottle', 1)
+```
+
+Checking a single item with metadata
+```lua
+Framework.HasItem('water_bottle', 1, { quality = 100 })
+```
+
+Checking multiple items
+```lua
+Framework.HasItem({'water_bottle', 'burger' }, 1)
+```
+
+Checking multiple items with different quantity
+```lua
+Framework.HasItem({['water_bottle'] = 1, ['burger'] = 2})
+```
