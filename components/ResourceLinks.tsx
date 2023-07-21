@@ -1,5 +1,5 @@
 import React from 'react';
-import { GhButton, DocButton, ReleaseButton, DownloadButton } from './Buttons';
+import { GhButton, DownloadButton } from './Buttons';
 
 interface Props {
   children?: React.ReactNode;
@@ -8,12 +8,11 @@ interface Props {
   download?: string;
 }
 
-const ResourceLinks = ({ repo, docs, download }: Props) => {
+const ResourceLinks = ({ repo, download }: Props) => {
   return (
     <div className="flex flex-wrap gap-1">
       <GhButton link={repo} />
       {download && <DownloadButton link={download }/>}
-      {docs && <DocButton link={docs} />}
     </div>
   );
 };
