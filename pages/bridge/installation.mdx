@@ -1,0 +1,28 @@
+import { Callout } from 'nextra-theme-docs';
+
+## Installing The Bridge
+
+<Callout type="warning" emoji="⚠️">
+  For Developers Only
+</Callout>
+
+To be able to load the bridge you need to add the following to your fxmanifest.lua
+
+```lua
+lua54 'yes'
+
+client_scripts {
+    'bridge/bridge.lua',
+    -- client script
+}
+
+server_scripts {
+    'bridge/bridge.lua',
+    -- server script
+}
+
+files {
+    'bridge/**/**/client.lua',
+    'bridge/**/*.lua',
+}
+```

@@ -1,8 +1,0 @@
----
-layout: default
-title: Config File
-parent: SD-StoreRobbery
-nav_order: 2
----
-
-# Config File
