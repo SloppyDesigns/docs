@@ -73,6 +73,23 @@ local player = Framework.Player
 print(player.Firstname, player.Lastname)
 ```
 
+## CreateCallback
+
+Function Creates Client Callback.
+
+```lua
+Framework.CreateCallback(name, cb)
+```
+
+- name: `string`
+- cb: `function(cb, ...)`
+
+```lua
+Framework.CreateCallback('clientcallbackname', function(cb, value1, value2)
+    cb(value1, value2)
+end)
+```
+
 ## TriggerCallback
 
 Function Triggers Server Callback
@@ -120,6 +137,26 @@ Framework.ToggleDuty()
 
 ## Notify
 
+Show Notification Message
+
 ```lua
-Framework.Notify()
+Framework.Notify(message, type, length)
 ```
+
+- message: `string`
+- type `info | success | error`
+- length `number`
+
+```lua
+Framework.Notify('My Notification Message', 'info', 5000)
+```
+
+## IsPlayerDead
+
+Check If Player Is Dead
+
+```lua
+Framework.IsPlayerDead()
+```
+
+returns: `boolean`

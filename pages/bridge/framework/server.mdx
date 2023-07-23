@@ -77,6 +77,24 @@ Framework.CreateCallback('servercallbackname', function(source, cb, value1, valu
 end)
 ```
 
+## TriggerCallback
+
+Function Triggers Client Callback
+
+```lua
+Framework.TriggerCallback(source, name, cb, ...)
+```
+
+- source: `number`
+- name: `string`
+- cb: `function(...)`
+
+```lua
+Framework.TriggerCallback(source, 'clientcallbackname', function(result1, result2)
+    print(result1, result2)
+end, value1, value2)
+```
+
 ## CreateUseableItem
 
 ```lua
@@ -138,6 +156,29 @@ Framework.DoesGangExist('gangname', 0)
 
 ## Notify
 
+Show Notification Message
+
 ```lua
-Framework.Notify()
+Framework.Notify(source, message, type, length)
 ```
+
+- source `number`
+- message: `string`
+- type `info | success | error`
+- length `number`
+
+```lua
+Framework.Notify(source, 'My Notification Message', 'info', 5000)
+```
+
+## IsPlayerDead
+
+Check If Player Is Dead
+
+```lua
+Framework.IsPlayerDead(source)
+```
+
+- source `number`
+
+returns: `boolean`
