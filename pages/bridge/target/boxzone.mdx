@@ -1,0 +1,23 @@
+# Target BoxZone
+
+Creates Targetable BoxZone.
+
+```lua
+Target.AddBoxZone(data)
+```
+- data: `table`
+    - coords: `vector3`
+    - size: `vector3`
+    - rotation: `number`
+    - debug: `boolean`
+    - options: [Options[]](/bridge/target/options)
+
+```lua
+Target.AddBoxZone({
+    coords = vector3(0, 0, 0),
+    size = vector3(1, 1, 1),
+    rotation = 0,
+    debug = true,
+    options = {}
+})
+```

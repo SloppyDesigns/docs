@@ -60,7 +60,7 @@ const config: DocsThemeConfig = {
     </>
   ),
   project: {
-    link: 'https://github.com/sloppydesigns/docs',
+    link: 'https://github.com/SloppyDesigns',
   },
   chat: {
     link: 'https://discord.gg/sloppydesigns',
@@ -89,14 +89,13 @@ const config: DocsThemeConfig = {
   sidebar: {
     defaultMenuCollapseLevel: 1,
     titleComponent({ title, type }) {
-      if (type === 'separator') {
-        return <div style={{ background: 'cyan', textAlign: 'center' }}>{title}</div>;
-      }
       if (title === 'Tebex') {
         return (
           <>
-            {StoreIcon}
-            <span style={{ marginLeft: '1em' }}>{title}</span>
+            <div style={{ display: 'flex' }}>
+              <span>{StoreIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
           </>
         );
       }
@@ -104,8 +103,10 @@ const config: DocsThemeConfig = {
       if (title === 'About') {
         return (
           <>
-            {AboutIcon}
-            <span style={{ marginLeft: '1em' }}>{title}</span>
+            <div style={{ display: 'flex' }}>
+              <span>{AboutIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
           </>
         );
       }
@@ -113,8 +114,10 @@ const config: DocsThemeConfig = {
       if (title === 'Bridge') {
         return (
           <>
-            {BridgeIcon}
-            <span style={{ marginLeft: '-6em' }}>{title}</span>
+            <div style={{ display: 'flex' }}>
+              <span>{BridgeIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
           </>
         );
       }
@@ -122,8 +125,10 @@ const config: DocsThemeConfig = {
       if (title === 'SD-Notify') {
         return (
           <>
-            {NotifyIcon}
-            <span style={{ marginLeft: '1em' }}>{title}</span>
+            <div style={{ display: 'flex' }}>
+              <span>{NotifyIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
           </>
         );
       }
@@ -131,8 +136,10 @@ const config: DocsThemeConfig = {
       if (title === 'SD-Merchants') {
         return (
           <>
-            {MerchantIcon}
-            <span style={{ marginLeft: '-3em' }}>{title}</span>
+            <div style={{ display: 'flex' }}>
+              <span>{MerchantIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
           </>
         );
       }
@@ -141,8 +148,10 @@ const config: DocsThemeConfig = {
       if (title === 'Free Releases') {
         return (
           <>
-            {FreeIcon}
-            <span style={{ marginLeft: '-3em' }}>{title}</span>
+            <div style={{ display: 'flex' }}>
+              <span>{FreeIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
           </>
         );
       }
@@ -150,8 +159,10 @@ const config: DocsThemeConfig = {
       if (title === 'SD-Paycheck') {
         return (
           <>
-            {PayCheckIcon}
-            <span style={{ marginLeft: '-1em' }}>{title}</span>
+            <div style={{ display: 'flex' }}>
+              <span>{PayCheckIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
           </>
         );
       }
@@ -159,8 +170,10 @@ const config: DocsThemeConfig = {
       if (title === 'SD-Stashes') {
         return (
           <>
-            {StashesIcon}
-            <span style={{ marginLeft: '-1.5em' }}>{title}</span>
+            <div style={{ display: 'flex' }}>
+              <span>{StashesIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
           </>
         );
       }
@@ -168,8 +181,10 @@ const config: DocsThemeConfig = {
       if (title === 'SD-Menu') {
         return (
           <>
-            {MenuIcon}
-            <span style={{ marginLeft: '-2em' }}>{title}</span>
+            <div style={{ display: 'flex' }}>
+              <span>{MenuIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
           </>
         );
       }
@@ -178,7 +193,7 @@ const config: DocsThemeConfig = {
     },
   },
   head: useHead,
-  primaryHue: { dark: 200, light: 200 },
+  primaryHue: { dark: 151, light: 151 },
 
   useNextSeoProps: useNextSeoProps,
 };
