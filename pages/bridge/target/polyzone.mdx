@@ -1,0 +1,26 @@
+# Target PolyZone
+
+Creates Targetable PolyZone.
+
+```lua
+Target.AddPolyZone(data)
+```
+- data: `table`
+    - debug?: `boolean`
+    - height?: `number`
+    - points: `vector3[]`
+    - options: [Options[]](/bridge/target/options)
+
+```lua
+Target.AddPolyZone({
+    points = {
+        vector3(0, 0, 0),
+        vector3(0, 0, 0),
+        vector3(0, 0, 0),
+        vector3(0, 0, 0)
+    },
+    height = 1,
+    debug = true,
+    options = {}
+})
+```

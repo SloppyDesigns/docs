@@ -1,4 +1,6 @@
 {
   "options": "Options",
-  "boxzone": "BoxZone"
+  "boxzone": "BoxZone",
+  "polyzone": "PolyZone",
+  "spherezone": "SphereZone"
 }
