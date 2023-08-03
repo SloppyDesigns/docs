@@ -7,6 +7,7 @@ Target.AddBoxZone(data)
 ```
 - data: `table`
     - debug?: `boolean`
+    - name: `string`
     - coords: `vector3`
     - size: `vector3`
     - rotation: `number`
@@ -16,6 +17,7 @@ returns: `number | string`
 
 ```lua
 Target.AddBoxZone({
+    name = 'MyBoxZone',
     coords = vector3(0, 0, 0),
     size = vector3(1, 1, 1),
     rotation = 0,

@@ -7,6 +7,7 @@ Target.AddSphereZone(data)
 ```
 - data: `table`
     - debug?: `boolean`
+    - name: `string`
     - coords: `vector3`
     - radius: `number`
     - options: [Options[]](/bridge/target/options)
@@ -15,6 +16,7 @@ returns: `number | string`
 
 ```lua
 Target.AddSphereZone({
+    name = 'MySphereZone',
     coords = vector3(0, 0, 0),
     radius = 1,
     debug = true,
