@@ -187,3 +187,30 @@ Framework.GetInventory(source)
 -- Stash
 Framework.GetInventory('mystash')
 ```
+
+## ClearInventory
+
+Clear Inventory
+
+```lua
+Framework.ClearInventory(inventory, keep)
+```
+
+- inventory: `number | string`
+- keep: `string | string[]`
+
+```lua
+-- Player
+Framework.ClearInventory(source)
+
+Framework.ClearInventory(source, 'water_bottle')
+
+Framework.ClearInventory(source, { 'water_bottle', 'tosti' })
+
+-- Stash
+Framework.ClearInventory('mystash')
+
+Framework.ClearInventory('mystash', 'water_bottle')
+
+Framework.ClearInventory('mystash', { 'water_bottle', 'tosti' })
+```

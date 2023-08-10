@@ -1,5 +1,6 @@
 {
   "player": "Player",
   "client": "Client",
-  "server": "Server"
+  "server": "Server",
+  "locale": "Locale"
 }
