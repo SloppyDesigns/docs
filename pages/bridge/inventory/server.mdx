@@ -76,6 +76,50 @@ Framework.RemoveItem(source, 'water_bottle', 1, nil, 1)
 Framework.RemoveItem('mystash', 'water_bottle', 1, nil, 1)
 ```
 
+## GetItem
+
+Get Item From Inventory
+
+```lua
+Framework.GetItem(inventory, item, metadata)
+```
+
+- inventory: `number | string`
+- item: `string`
+- metadata?: `table`
+
+returns: [Item[]](/bridge/inventory/item)
+
+```lua
+-- Get Item From Player Inventory
+Framework.GetItem(source, 'water_bottle')
+
+-- Get Item From Stash
+Framework.GetItem('mystash', 'water_bottle')
+```
+
+## GetItemCount
+
+Get Item Count From Inventory
+
+```lua
+Framework.GetItemCount(inventory, item, metadata)
+```
+
+- inventory: `number | string`
+- item: `string`
+- metadata?: `table`
+
+returns: `number`
+
+```lua
+-- Get Item Count From Player Inventory
+Framework.GetItemCount(source, 'water_bottle')
+
+-- Get Item Count From Stash
+Framework.GetItemCount('mystash', 'water_bottle')
+```
+
 ## HasItem
 
 Check if a player or a stash has an item
