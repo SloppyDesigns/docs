@@ -214,3 +214,34 @@ Framework.ClearInventory('mystash', 'water_bottle')
 
 Framework.ClearInventory('mystash', { 'water_bottle', 'tosti' })
 ```
+
+## RegisterShop
+
+Register Shop
+
+```lua
+Framework.RegisterShop(name, data)
+```
+
+- name: `string`
+- data: `table`
+    - name: `string`
+    - items: `table[]`
+        - name: `string`
+        - price: `number`
+        - count?: `number`
+        - metadata?: `table`
+    - groups?: `string | string[] | table<string, number>`
+
+```lua
+Framework.RegisterShop('myshop', {
+    name = 'My Shop',
+    items = {
+        { name = 'water_bottle', price = 10, count = 99, metadata = { quality = 50 }}
+    },
+    groups = {
+        police = 0,
+        mygang = 0
+    }
+})
+```
