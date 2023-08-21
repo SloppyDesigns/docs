@@ -247,7 +247,7 @@ returns: `table`
   </Tab>
 </Tabs>
 
-## Set Job
+## SetJob
 
 Set Player job
 
@@ -270,7 +270,7 @@ returns: `boolean`
   </Tab>
 </Tabs>
 
-## Set Gang
+## SetGang
 
 Set Player gang
 
@@ -331,7 +331,7 @@ Framework.HasGang('mygang', Framework.Player)
 Framework.HasGang({ ['mygang'] = 1 }, Framework.Player)
 ```
 
-## Add Money
+## AddMoney
 
 Add Player Money
 
@@ -354,7 +354,7 @@ returns: `boolean`
   </Tab>
 </Tabs>
 
-## Remove Money
+## RemoveMoney
 
 Remove Player Money
 
@@ -377,7 +377,7 @@ returns: `boolean`
   </Tab>
 </Tabs>
 
-## Get Money
+## GetMoney
 
 Get Player Money
 
@@ -395,6 +395,49 @@ returns: `number`
     ```lua
     local player = Framework.GetPlayer(source)
     player.GetMoney('cash')
+    ```
+  </Tab>
+</Tabs>
+
+## GetStatus
+
+Get Player Status
+
+```lua
+Player.GetStatus(key)
+```
+
+- key: `string` 
+
+returns: `number`
+
+<Tabs items={['Server']}>
+  <Tab>
+
+    ```lua
+    local player = Framework.GetPlayer(source)
+    player.GetStatus('hunger')
+    ```
+  </Tab>
+</Tabs>
+
+## SetStatus
+
+Set Player Status
+
+```lua
+Player.SetStatus(key, value)
+```
+
+- key: `string` 
+- value: `number` 
+
+<Tabs items={['Server']}>
+  <Tab>
+
+    ```lua
+    local player = Framework.GetPlayer(source)
+    player.SetStatus('hunger', 100)
     ```
   </Tab>
 </Tabs>
