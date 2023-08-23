@@ -102,10 +102,19 @@ Framework.CreateUseableItem(name, cb)
 ```
 
 - name: `string`
-- cb: `function(source)`
+- cb: `function(source, item, data)`
+    - source: `number`
+    - item: `string`
+    - data: `table`
+        - weight: `number`
+        - count: `number`
+        - slot: `number`
+        - name: `string`
+        - metadata: `table`
+        - label: `string`
 
 ```lua
-Framework.CreateUseableItem('itemname', function(source)
+Framework.CreateUseableItem('itemname', function(source, item, data)
     -- Item Is Useable
 end)
 ```
