@@ -11,14 +11,8 @@ To be able to load the bridge you need to add the following to your fxmanifest.l
 ```lua
 lua54 'yes'
 
-client_scripts {
+shared_scripts {
     'bridge/bridge.lua',
-    -- client script
-}
-
-server_scripts {
-    'bridge/bridge.lua',
-    -- server script
 }
 
 files {
