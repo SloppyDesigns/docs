@@ -10,38 +10,16 @@ returns: [Item[]](/bridge/inventory/item)
 
 ## OpenStash
 
-Opens an stash
+Opens stash registered using [RegisterStash](/bridge/inventory/server#registerstash)
 
 ```lua
-Framework.OpenStash(name, slots, weight, owner, groups)
+Framework.OpenStash(name)
 ```
 
 - name: `string`
-- slots: `number`
-- weight: `number`
-- owner?: `string | boolean`
-- groups?: `table`
 
-Open stash without owner or groups
 ```lua
-Framework.OpenStash('mystash', 10, 5000)
-```
-
-Open stash unique to each player
-```lua
-Framework.OpenStash('mystash', 10, 5000, true)
-```
-
-Open stash with player as the owner
-```lua
-Framework.OpenStash('mystash', 10, 5000, Framework.Player.Identifier)
-```
-
-Open stash with groups
-```lua
-Framework.OpenStash('mystash', 10, 5000, nil, { ['police'] = 0, ['ambulance'] = 0 })
-
-Framework.OpenStash('mystash', 10, 5000, nil, { ['mygang'] = 0 })
+Framework.OpenStash('mystash')
 ```
 
 ## OpenShop

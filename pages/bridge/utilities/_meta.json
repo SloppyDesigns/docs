@@ -1,4 +1,5 @@
 {
   "client": "Client",
-  "server": "Server"
+  "server": "Server",
+  "shared": "Shared"
 }
