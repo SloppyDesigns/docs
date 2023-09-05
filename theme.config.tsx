@@ -1,7 +1,7 @@
 import React from 'react';
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs';
 import { useRouter } from 'next/router';
-import { StoreIcon, AboutIcon, BridgeIcon, NotifyIcon, MerchantIcon, FreeIcon, PayCheckIcon, StashesIcon, MenuIcon } from '@components/Icons';
+import { StoreIcon, AboutIcon, BridgeIcon, NotifyIcon, MerchantIcon, FreeIcon, PayCheckIcon, StashesIcon, MenuIcon, KeyPadIcon } from '@components/Icons';
 
 function useHead() {
   const { asPath } = useRouter();
@@ -183,6 +183,17 @@ const config: DocsThemeConfig = {
           <>
             <div style={{ display: 'flex' }}>
               <span>{MenuIcon}</span>
+              <span style={{ marginLeft: '1em' }}>{title}</span>
+            </div>
+          </>
+        );
+      }
+
+      if (title === 'SD-KeyPad') {
+        return (
+          <>
+            <div style={{ display: 'flex' }}>
+              <span>{KeyPadIcon}</span>
               <span style={{ marginLeft: '1em' }}>{title}</span>
             </div>
           </>

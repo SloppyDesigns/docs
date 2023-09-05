@@ -847,3 +847,28 @@ export const RedCrossIcon = (
     </g>
   </svg>
 );
+
+export const KeyPadIcon = (
+  <svg id="Layer_3" height="22" viewBox="0 0 64 64" width="22" xmlns="http://www.w3.org/2000/svg" data-name="Layer 3">
+    <rect fill="#94a4ad" height="54" rx="5" width="38" x="10" y="2" />
+    <path d="m23 14h12v8h-12z" fill="#f7c244" />
+    <path d="m23 14v6h7a3 3 0 0 0 3-3v-3z" fill="#f9ce69" />
+    <g fill="#b3bec4">
+      <path d="m16 46h26v6h-26z" />
+      <path d="m16 26h6v6h-6z" />
+      <path d="m26 26h6v6h-6z" />
+      <path d="m36 26h6v6h-6z" />
+      <path d="m26 36h6v6h-6z" />
+      <path d="m16 36h6v6h-6z" />
+    </g>
+    <path d="m51 40h-10v-7a2 2 0 0 0 -4 0v13h-2a2 2 0 0 0 -2 2v7l4 4v3h14v-3l2-4v-13a2 2 0 0 0 -2-2z" fill="#fee3b8" />
+    <path d="m29 5a5.006 5.006 0 0 0 -5 5v3h-1a1 1 0 0 0 -1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8a1 1 0 0 0 -1-1h-1v-3a5.006 5.006 0 0 0 -5-5zm-3 5a3 3 0 0 1 6 0v3h-6zm8 11h-10v-6h10z" />
+    <path d="m28 17h2v2h-2z" />
+    <path d="m16 25a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0 -1-1zm5 6h-4v-4h4z" />
+    <path d="m33 26a1 1 0 0 0 -1-1h-6a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1zm-2 5h-4v-4h4z" />
+    <path d="m32 35h-6a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0 -1-1zm-1 6h-4v-4h4z" />
+    <path d="m15 42a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0 -1-1h-6a1 1 0 0 0 -1 1zm2-5h4v4h-4z" />
+    <path d="m43 30v-4a1 1 0 0 0 -1-1h-6a1 1 0 0 0 -1 1v4h2v-3h4v3z" />
+    <path d="m53.9 55.447a1 1 0 0 0 .1-.447v-13a3 3 0 0 0 -3-3h-2v-32a6.006 6.006 0 0 0 -6-6h-28a6.006 6.006 0 0 0 -6 6v44a6.006 6.006 0 0 0 6 6h15v-2h-15a4 4 0 0 1 -4-4v-44a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v32h-5v-6a3 3 0 0 0 -6 0v12h-1a3 3 0 0 0 -3 3v3h-15v-4h13v-2h-14a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h16v2a1 1 0 0 0 .293.707l3.707 3.707v1.586h-2v2h20v-2h-2v-1.764zm-15.9 5.553v-2a1 1 0 0 0 -.293-.707l-3.707-3.707v-6.586a1 1 0 0 1 1-1h1v4h2v-18a1 1 0 0 1 2 0v16h2v-8h2v8h2v-8h2v8h2v-8h1a1 1 0 0 1 1 1v12.764l-1.9 3.789a1 1 0 0 0 -.1.447v2z" />
+  </svg>
+);
