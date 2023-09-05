@@ -29,3 +29,218 @@ Framework.LoadAnimSet(animSet)
 ```
 
 - animSet: `string`
+
+## LoadAmbientAudioBank
+
+Load a ambient audio bank when called from a thread it will yield until loaded
+
+```lua
+Framework.LoadAmbientAudioBank(bank)
+```
+
+- bank: `string`
+
+## LoadMissionAudioBank
+
+Load a mission audio bank when called from a thread it will yield until loaded
+
+```lua
+Framework.LoadMissionAudioBank(bank)
+```
+
+- bank: `string`
+
+## LoadScriptAudioBank
+
+Load a script audio bank when called from a thread it will yield until loaded
+
+```lua
+Framework.LoadScriptAudioBank(bank)
+```
+
+- bank: `string`
+
+## GetPeds
+
+Get the Game Ped Pool
+
+```lua
+Framework.GetPeds()
+```
+
+returns: `[handlers: number]`
+
+## GetObjects
+
+Get the Game Object Pool
+
+```lua
+Framework.GetObjects()
+```
+
+returns: `[handlers: number]`
+
+## GetVehicles
+
+Get the Game Vehicle Pool
+
+```lua
+Framework.GetVehicles()
+```
+
+returns: `[handlers: number]`
+
+## GetPickups
+
+Get the Game Pickup Pool
+
+```lua
+Framework.GetPickups()
+```
+
+returns: `[handlers: number]`
+
+## GetClosestPed
+
+Get the ped and coords closest to set coords and distance
+
+```lua
+Framework.GetClosestPed(coords, distance)
+```
+
+- coords: `vector3`
+- distance?: `number`
+
+returns: 
+    - ped?: `number`
+    - coords?: `vector3`
+
+## GetClosestPlayer
+
+Get the player, ped and coords closest to set coords and distance
+
+```lua
+Framework.GetClosestPlayer(coords, distance, includeLocal)
+```
+
+- coords: `vector3`
+- distance?: `number`
+- includeLocal?: `boolean`
+
+returns: 
+    - player?: `number`
+    - ped?: `number`
+    - coords?: `vector3`
+
+## GetClosestObject
+
+Get the object and coords closest to set coords and distance
+
+```lua
+Framework.GetClosestObject(coords, distance)
+```
+
+- coords: `vector3`
+- distance?: `number`
+
+returns: 
+    - object?: `number`
+    - coords?: `vector3`
+
+## GetClosestVehicle
+
+Get the vehicle and coords closest to set coords and distance
+
+```lua
+Framework.GetClosestVehicle(coords, distance, includeLocal)
+```
+
+- coords: `vector3`
+- distance?: `number`
+- includeLocal?: `boolean`
+
+returns: 
+    - vehicle?: `number`
+    - coords?: `vector3`
+
+## GetClosestPickup
+
+Get the pickup and coords closest to set coords and distance
+
+```lua
+Framework.GetClosestPickup(coords, distance)
+```
+
+- coords: `vector3`
+- distance?: `number`
+
+returns: 
+    - pickup?: `number`
+    - coords?: `vector3`
+
+## GetNearbyPeds
+
+Get all peds and coords in range of set coords and distance
+
+```lua
+Framework.GetNearbyPeds(coords, distance)
+```
+
+- coords: `vector3`
+- distance?: `number`
+
+returns: `{ ped: number, coords: vector3 }[]`
+
+## GetNearbyPlayers
+
+Get all players, peds and coords in range of set coords and distance
+
+```lua
+Framework.GetNearbyPlayers(coords, distance, includeLocal)
+```
+
+- coords: `vector3`
+- distance?: `number`
+- includeLocal?: `boolean`
+
+returns: `{ id: number, ped: number, coords: vector3 }[]`
+
+## GetNearbyObjects
+
+Get all objects and coords in range of set coords and distance
+
+```lua
+Framework.GetNearbyObjects(coords, distance)
+```
+
+- coords: `vector3`
+- distance?: `number`
+
+returns: `{ object: number, coords: vector3 }[]`
+
+## GetNearbyVehicles
+
+Get all vehicles and coords in range of set coords and distance
+
+```lua
+Framework.GetNearbyVehicles(coords, distance, includeLocal)
+```
+
+- coords: `vector3`
+- distance?: `number`
+- includeLocal?: `boolean`
+
+returns: `{ vehicle: number, coords: vector3 }[]`
+
+## GetNearbyPickups
+
+Get all pickups and coords in range of set coords and distance
+
+```lua
+Framework.GetNearbyPickups(coords, distance)
+```
+
+- coords: `vector3`
+- distance?: `number`
+
+returns: `{ pickup: number, coords: vector3 }[]`
