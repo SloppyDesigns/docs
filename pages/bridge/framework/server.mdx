@@ -5,60 +5,71 @@
 Function gets called when the player loads into the server
 
 ```lua
-Framework.OnPlayerLoaded = function()
+Framework.OnPlayerLoaded = function(source)
     -- Player Loaded Into The Server
 end
 ```
+- source: `number`
 
 ## OnPlayerUnload
 
 Function gets called when the player leaves the server
 
 ```lua
-Framework.OnPlayerUnload = function()
+Framework.OnPlayerUnload = function(source)
     -- Player Left The Server
 end
 ```
+
+- source: `number`
 
 ## OnJobUpdate
 
 Function gets called when the players job changes
 
 ```lua
-Framework.OnJobUpdate = function()
+Framework.OnJobUpdate = function(source)
     -- Player Job Changed
 end
 ```
+
+- source: `number`
 
 ## OnJobDutyUpdate
 
 Function gets called when the players job duty changes
 
 ```lua
-Framework.OnJobDutyUpdate = function()
+Framework.OnJobDutyUpdate = function(source)
     -- Player Job Duty Changed
 end
 ```
+
+- source: `number`
 
 ## OnGangUpdate
 
 Function gets called when the players gang changes
 
 ```lua
-Framework.OnGangUpdate = function()
+Framework.OnGangUpdate = function(source)
     -- Player Gang Changed
 end
 ```
+
+- source: `number`
 
 ## OnPlayerDataUpdate
 
 Function gets called when the players data updates
 
 ```lua
-Framework.OnPlayerDataUpdate = function()
+Framework.OnPlayerDataUpdate = function(source)
     -- Player Data Changed
 end
 ```
+
+- source: `number`
 
 ## CreateCallback
 
