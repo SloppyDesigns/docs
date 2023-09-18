@@ -19,6 +19,12 @@
       "pagination": false
     }
   },
+  "unit": {
+    "title": "Unit",
+    "theme": {
+      "pagination": false
+    }
+  },
   "sd-notify": {
     "title": "SD-Notify"
   },
