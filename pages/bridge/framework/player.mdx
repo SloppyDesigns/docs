@@ -291,6 +291,28 @@ returns: `table`
   </Tab>
 </Tabs>
 
+## Metadata
+
+Player Metadata
+
+returns: `table`
+
+<Tabs items={['Client', 'Server']}>
+  <Tab>
+
+    ```lua
+    Framework.Player.Metadata
+    ```
+  </Tab>
+  <Tab>
+
+    ```lua
+    local player = Framework.GetPlayer(source)
+    player.Metadata
+    ```
+  </Tab>
+</Tabs>
+
 ## SetJob
 
 Set Player job
@@ -482,6 +504,52 @@ Player.SetStatus(key, value)
     ```lua
     local player = Framework.GetPlayer(source)
     player.SetStatus('hunger', 100)
+    ```
+  </Tab>
+</Tabs>
+
+## GetMetaData
+
+Get Player Metadata
+
+```lua
+Player.GetMetaData(key)
+```
+
+- key?: `string` 
+
+<Tabs items={['Server']}>
+  <Tab>
+
+    ```lua
+    local player = Framework.GetPlayer(source)
+
+    -- Get All Metadata
+    player.GetMetaData()
+
+    -- Get Specific Metadata key
+    player.GetMetaData('mykey')
+    ```
+  </Tab>
+</Tabs>
+
+## SetMetaData
+
+Set Player Metadata
+
+```lua
+Player.SetMetaData(key, value)
+```
+
+- key: `string`
+- value: `any` 
+
+<Tabs items={['Server']}>
+  <Tab>
+
+    ```lua
+    local player = Framework.GetPlayer(source)
+    player.SetMetaData('mykey', 'myvalue')
     ```
   </Tab>
 </Tabs>
