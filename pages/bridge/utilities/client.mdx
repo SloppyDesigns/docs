@@ -244,3 +244,34 @@ Framework.GetNearbyPickups(coords, distance)
 - distance?: `number`
 
 returns: `{ pickup: number, coords: vector3 }[]`
+
+## ProgressBar
+
+Displays a running progress bar
+
+```lua
+Framework.ProgressBar(data)
+```
+
+- data: `table`
+    - duration: `number`
+    - label: `string`
+    - canCancel?: `boolean`
+    - useWhileDead?: `boolean`
+    - anim?: `table`
+        - dict?: `string`
+        - clip?: `string`
+        - flag?: `number`
+        - scenario?: `string`
+    - disable?: `table`
+        - move?: `boolean`
+        - vehicle?: `boolean`
+        - combat?: `boolean`
+        - mouse?: `boolean`
+    - props?: (`object` or `array`)
+        - model: `string`
+        - bone?: `number`
+        - pos: `vector3`
+        - rot: `vector3`
+    - onFinish?: `function()`
+    - onCancel?: `function()`
