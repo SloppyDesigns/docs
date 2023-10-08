@@ -184,6 +184,66 @@ returns: `boolean`
 Framework.DoesGangExist('gangname', 0)
 ```
 
+## RegisterSociety
+
+```lua
+Framework.RegisterSociety(name, type)
+```
+
+- name: `string`
+- type: `job' | 'gang`
+
+```lua
+Framework.RegisterSociety('police', 'job')
+```
+
+## SocietyGetMoney
+
+```lua
+Framework.SocietyGetMoney(name, type)
+```
+
+- name: `string`
+- type: `job' | 'gang`
+
+returns: `number`
+
+```lua
+Framework.SocietyGetMoney('police', 'job')
+```
+
+## SocietyAddMoney
+
+```lua
+Framework.SocietyAddMoney(name, type, amount)
+```
+
+- name: `string`
+- type: `job' | 'gang`
+- amount: `number`
+
+returns: `boolean`
+
+```lua
+Framework.SocietyAddMoney('police', 'job', 100)
+```
+
+## SocietyRemoveMoney
+
+```lua
+Framework.SocietyRemoveMoney(name, type, amount)
+```
+
+- name: `string`
+- type: `job' | 'gang`
+- amount: `number`
+
+returns: `boolean`
+
+```lua
+Framework.SocietyRemoveMoney('police', 'job', 100)
+```
+
 ## Notify
 
 Show Notification Message

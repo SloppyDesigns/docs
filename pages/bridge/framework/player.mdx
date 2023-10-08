@@ -553,3 +553,85 @@ Player.SetMetaData(key, value)
     ```
   </Tab>
 </Tabs>
+
+## HasLicense
+
+Check If Player Has License
+
+```lua
+Player.HasLicense(name)
+```
+
+- name: `string`
+
+returns: `boolean`
+ 
+<Tabs items={['Server']}>
+  <Tab>
+
+    ```lua
+    local player = Framework.GetPlayer(source)
+    player.HasLicense('driver')
+    ```
+  </Tab>
+</Tabs>
+
+## GetLicenses
+
+Get Player Licenses
+
+```lua
+Player.GetLicenses()
+```
+
+returns: `table<string, boolean>`
+ 
+<Tabs items={['Server']}>
+  <Tab>
+
+    ```lua
+    local player = Framework.GetPlayer(source)
+    player.GetLicenses()
+    ```
+  </Tab>
+</Tabs>
+
+## AddLicense
+
+Add License To Player
+
+```lua
+Player.AddLicense(name)
+```
+
+- name: `string`
+ 
+<Tabs items={['Server']}>
+  <Tab>
+
+    ```lua
+    local player = Framework.GetPlayer(source)
+    player.AddLicense('driver')
+    ```
+  </Tab>
+</Tabs>
+
+## RemoveLicense
+
+Remove License From Player
+
+```lua
+Player.RemoveLicense(name)
+```
+
+- name: `string`
+ 
+<Tabs items={['Server']}>
+  <Tab>
+
+    ```lua
+    local player = Framework.GetPlayer(source)
+    player.RemoveLicense('driver')
+    ```
+  </Tab>
+</Tabs>
