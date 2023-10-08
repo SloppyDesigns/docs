@@ -1,3 +1,5 @@
+import { Callout } from 'nextra-theme-docs';
+
 # Framework Utilities
 
 ## LoadModel
@@ -275,3 +277,45 @@ Framework.ProgressBar(data)
         - rot: `vector3`
     - onFinish?: `function()`
     - onCancel?: `function()`
+
+## NetworkRequestControlOfNetworkId
+
+<Callout type="warning" emoji="⚠️">
+  Not Recommended Unless You Absolutely Need It
+</Callout>
+
+Request network control of network id 
+
+```lua
+Framework.NetworkRequestControlOfNetworkId(netid) 
+```
+
+- netid: `number`
+
+## NetworkRequestControlOfEntity
+
+<Callout type="warning" emoji="⚠️">
+  Not Recommended Unless You Absolutely Need It
+</Callout>
+
+Request network control of entity
+
+```lua
+Framework.NetworkRequestControlOfEntity(entity) 
+```
+
+- entity: `number`
+
+## NetworkRequestControlOfDoor
+
+<Callout type="warning" emoji="⚠️">
+  Not Recommended Unless You Absolutely Need It
+</Callout>
+
+Request network control of door
+
+```lua
+Framework.NetworkRequestControlOfDoor(door) 
+```
+
+- door: `number`
