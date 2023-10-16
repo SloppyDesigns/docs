@@ -36,7 +36,6 @@ Framework.OpenShop(name)
 Framework.OpenShop('myshop')
 ```
 
-
 ## HasItem
 
 Check if a player has an item or items
@@ -69,4 +68,20 @@ Framework.HasItem({'water_bottle', 'burger' }, 1)
 Checking multiple items with different quantity
 ```lua
 Framework.HasItem({['water_bottle'] = 1, ['burger'] = 2})
+```
+
+## LockInventory
+
+Locks Inventory
+
+```lua
+Framework.LockInventory()
+```
+
+## UnlockInventory
+
+Unlocks Inventory
+
+```lua
+Framework.UnlockInventory()
 ```

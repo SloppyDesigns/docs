@@ -465,6 +465,34 @@ returns: `number`
   </Tab>
 </Tabs>
 
+## Accounts
+
+Gets Player Account Balance
+
+```lua
+Player.Accounts[name]
+```
+
+- name: `string`
+
+returns: `number`
+
+<Tabs items={['Client']}>
+  <Tab>
+
+    ```lua
+    -- Cash
+    Framework.Player.Accounts['cash']
+
+    -- Bank
+    Framework.Player.Accounts['bank']
+
+    -- Other
+    Framework.Player.Accounts['crypto']
+    ```
+  </Tab>
+</Tabs>
+
 ## GetStatus
 
 Get Player Status
